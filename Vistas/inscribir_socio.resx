@@ -117,17 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="okeeeeeeeeeey1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Imagenes\okeeeeeeeeeey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="deportista" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Imagenes\deportista.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="okeeeeeeeeeey" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Imagenes\okeeeeeeeeeey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="c56bdcd971c348a97de9d59a7cac8f92-atleta-corriendo-duro" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Imagenes\c56bdcd971c348a97de9d59a7cac8f92-atleta-corriendo-duro.webp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>

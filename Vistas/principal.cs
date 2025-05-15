@@ -61,5 +61,10 @@ namespace Proyecto_Final.Vistas
         {
 
         }
+
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

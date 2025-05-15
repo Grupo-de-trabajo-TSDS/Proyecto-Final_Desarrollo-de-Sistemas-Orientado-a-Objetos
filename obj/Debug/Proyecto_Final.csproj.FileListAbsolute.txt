@@ -10,3 +10,11 @@ C:\Users\soled\source\repos\DSOO\Proyecto_Final\Proyecto_Final\obj\Debug\Proyect
 C:\Users\soled\source\repos\DSOO\Proyecto_Final\Proyecto_Final\obj\Debug\Proyecto_Final.pdb
 C:\Users\soled\source\repos\DSOO\Proyecto_Final\Proyecto_Final\obj\Debug\Proyecto_Final.Vistas.principal.resources
 C:\Users\soled\source\repos\DSOO\Proyecto_Final\Proyecto_Final\obj\Debug\Proyecto_Final.Vistas.frmPrincipal.resources
+C:\Users\Matias\Source\Repos\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.csproj.AssemblyReference.cache
+C:\Users\Matias\Source\Repos\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.exe.config
+C:\Users\Matias\Source\Repos\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.Vistas.Form1.resources
+C:\Users\Matias\Source\Repos\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.Vistas.frmLogin.resources
+C:\Users\Matias\Source\Repos\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.Vistas.frmPrincipal.resources
+C:\Users\Matias\Source\Repos\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.csproj.GenerateResource.cache
+C:\Users\Matias\Source\Repos\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.exe
+C:\Users\Matias\Source\Repos\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.pdb

@@ -1,14 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\soled\\source\\repos\\DSOO\\Proyecto_Final\\Proyecto_Final\\",
+  "WorkspaceRootPath": "C:\\Users\\Matias\\source\\repos\\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|c:\\users\\soled\\source\\repos\\dsoo\\proyecto_final\\proyecto_final\\vistas\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|c:\\users\\matias\\source\\repos\\proyecto-final_desarrollo-de-sistemas-orientado-a-objetos\\vistas\\inscribir_nosocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|solutionrelative:vistas\\inscribir_nosocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|c:\\users\\matias\\source\\repos\\proyecto-final_desarrollo-de-sistemas-orientado-a-objetos\\vistas\\inscribir_nosocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|solutionrelative:vistas\\inscribir_nosocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|c:\\users\\matias\\source\\repos\\proyecto-final_desarrollo-de-sistemas-orientado-a-objetos\\vistas\\inscribir_socio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|solutionrelative:vistas\\inscribir_socio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|c:\\users\\matias\\source\\repos\\proyecto-final_desarrollo-de-sistemas-orientado-a-objetos\\vistas\\inscribir_socio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|solutionrelative:vistas\\inscribir_socio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|c:\\users\\matias\\source\\repos\\proyecto-final_desarrollo-de-sistemas-orientado-a-objetos\\vistas\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|solutionrelative:vistas\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|c:\\users\\matias\\source\\repos\\proyecto-final_desarrollo-de-sistemas-orientado-a-objetos\\vistas\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|solutionrelative:vistas\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|c:\\users\\soled\\source\\repos\\dsoo\\proyecto_final\\proyecto_final\\vistas\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|c:\\users\\matias\\source\\repos\\proyecto-final_desarrollo-de-sistemas-orientado-a-objetos\\vistas\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|solutionrelative:vistas\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|c:\\users\\matias\\source\\repos\\proyecto-final_desarrollo-de-sistemas-orientado-a-objetos\\vistas\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9900570-C90B-4395-9F6C-085FDB616E59}|Proyecto_Final.csproj|solutionrelative:vistas\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,34 +42,106 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "inscribir_nosocio.cs",
+              "DocumentMoniker": "C:\\Users\\Matias\\source\\repos\\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\\Vistas\\inscribir_nosocio.cs",
+              "RelativeDocumentMoniker": "Vistas\\inscribir_nosocio.cs",
+              "ToolTip": "C:\\Users\\Matias\\source\\repos\\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\\Vistas\\inscribir_nosocio.cs",
+              "RelativeToolTip": "Vistas\\inscribir_nosocio.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAcwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T06:12:26.63Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "principal.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\soled\\source\\repos\\DSOO\\Proyecto_Final\\Proyecto_Final\\Vistas\\principal.cs",
-              "RelativeDocumentMoniker": "Vistas\\principal.cs",
-              "ToolTip": "C:\\Users\\soled\\source\\repos\\DSOO\\Proyecto_Final\\Proyecto_Final\\Vistas\\principal.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Vistas\\principal.cs [Dise\u00F1o]",
+              "Title": "inscribir_nosocio.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Matias\\source\\repos\\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\\Vistas\\inscribir_nosocio.cs",
+              "RelativeDocumentMoniker": "Vistas\\inscribir_nosocio.cs",
+              "ToolTip": "C:\\Users\\Matias\\source\\repos\\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\\Vistas\\inscribir_nosocio.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Vistas\\inscribir_nosocio.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T02:43:02.124Z",
+              "WhenOpened": "2025-05-15T06:12:21.896Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "login.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\soled\\source\\repos\\DSOO\\Proyecto_Final\\Proyecto_Final\\Vistas\\login.cs",
+              "DocumentIndex": 2,
+              "Title": "inscribir_socio.cs",
+              "DocumentMoniker": "C:\\Users\\Matias\\source\\repos\\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\\Vistas\\inscribir_socio.cs",
+              "RelativeDocumentMoniker": "Vistas\\inscribir_socio.cs",
+              "ToolTip": "C:\\Users\\Matias\\source\\repos\\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\\Vistas\\inscribir_socio.cs",
+              "RelativeToolTip": "Vistas\\inscribir_socio.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAcwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T06:12:14.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "inscribir_socio.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Matias\\source\\repos\\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\\Vistas\\inscribir_socio.cs",
+              "RelativeDocumentMoniker": "Vistas\\inscribir_socio.cs",
+              "ToolTip": "C:\\Users\\Matias\\source\\repos\\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\\Vistas\\inscribir_socio.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Vistas\\inscribir_socio.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T06:12:01.179Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "login.cs",
+              "DocumentMoniker": "C:\\Users\\Matias\\source\\repos\\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\\Vistas\\login.cs",
               "RelativeDocumentMoniker": "Vistas\\login.cs",
-              "ToolTip": "C:\\Users\\soled\\source\\repos\\DSOO\\Proyecto_Final\\Proyecto_Final\\Vistas\\login.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\Matias\\source\\repos\\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\\Vistas\\login.cs",
+              "RelativeToolTip": "Vistas\\login.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAcwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T06:11:56.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "login.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Matias\\source\\repos\\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\\Vistas\\login.cs",
+              "RelativeDocumentMoniker": "Vistas\\login.cs",
+              "ToolTip": "C:\\Users\\Matias\\source\\repos\\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\\Vistas\\login.cs [Dise\u00F1o]",
               "RelativeToolTip": "Vistas\\login.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T02:18:40.173Z",
+              "WhenOpened": "2025-05-15T06:11:55.339Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "principal.cs",
+              "DocumentMoniker": "C:\\Users\\Matias\\source\\repos\\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\\Vistas\\principal.cs",
+              "RelativeDocumentMoniker": "Vistas\\principal.cs",
+              "ToolTip": "C:\\Users\\Matias\\source\\repos\\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\\Vistas\\principal.cs",
+              "RelativeToolTip": "Vistas\\principal.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAkwA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T06:11:27.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "principal.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Matias\\source\\repos\\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\\Vistas\\principal.cs",
+              "RelativeDocumentMoniker": "Vistas\\principal.cs",
+              "ToolTip": "C:\\Users\\Matias\\source\\repos\\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\\Vistas\\principal.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Vistas\\principal.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T06:11:24.182Z",
               "EditorCaption": " [Dise\u00F1o]"
             }
           ]

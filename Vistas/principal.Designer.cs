@@ -44,9 +44,10 @@
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(206, 30);
+            this.lblTitulo.Location = new System.Drawing.Point(114, 21);
+            this.lblTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(537, 39);
+            this.lblTitulo.Size = new System.Drawing.Size(426, 31);
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "Club Deportivo - Pantalla Principal";
             this.lblTitulo.Click += new System.EventHandler(this.label1_Click);
@@ -55,9 +56,10 @@
             // 
             this.lblSocio.AutoSize = true;
             this.lblSocio.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSocio.Location = new System.Drawing.Point(301, 84);
+            this.lblSocio.Location = new System.Drawing.Point(211, 68);
+            this.lblSocio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSocio.Name = "lblSocio";
-            this.lblSocio.Size = new System.Drawing.Size(80, 29);
+            this.lblSocio.Size = new System.Drawing.Size(63, 24);
             this.lblSocio.TabIndex = 1;
             this.lblSocio.Text = "Socio";
             // 
@@ -65,18 +67,20 @@
             // 
             this.lblNoSocio.AutoSize = true;
             this.lblNoSocio.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNoSocio.Location = new System.Drawing.Point(518, 84);
+            this.lblNoSocio.Location = new System.Drawing.Point(373, 68);
+            this.lblNoSocio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNoSocio.Name = "lblNoSocio";
-            this.lblNoSocio.Size = new System.Drawing.Size(121, 29);
+            this.lblNoSocio.Size = new System.Drawing.Size(96, 24);
             this.lblNoSocio.TabIndex = 3;
             this.lblNoSocio.Text = "No Socio";
             // 
             // btnInscribirNoSocio
             // 
             this.btnInscribirNoSocio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInscribirNoSocio.Location = new System.Drawing.Point(462, 128);
+            this.btnInscribirNoSocio.Location = new System.Drawing.Point(331, 104);
+            this.btnInscribirNoSocio.Margin = new System.Windows.Forms.Padding(2);
             this.btnInscribirNoSocio.Name = "btnInscribirNoSocio";
-            this.btnInscribirNoSocio.Size = new System.Drawing.Size(246, 62);
+            this.btnInscribirNoSocio.Size = new System.Drawing.Size(184, 50);
             this.btnInscribirNoSocio.TabIndex = 6;
             this.btnInscribirNoSocio.Text = "INSCRIBIR NO SOCIO";
             this.btnInscribirNoSocio.UseVisualStyleBackColor = true;
@@ -85,9 +89,10 @@
             // btnInscribirSocio
             // 
             this.btnInscribirSocio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInscribirSocio.Location = new System.Drawing.Point(195, 128);
+            this.btnInscribirSocio.Location = new System.Drawing.Point(131, 104);
+            this.btnInscribirSocio.Margin = new System.Windows.Forms.Padding(2);
             this.btnInscribirSocio.Name = "btnInscribirSocio";
-            this.btnInscribirSocio.Size = new System.Drawing.Size(246, 62);
+            this.btnInscribirSocio.Size = new System.Drawing.Size(184, 50);
             this.btnInscribirSocio.TabIndex = 7;
             this.btnInscribirSocio.Text = "INSCRIBIR SOCIO";
             this.btnInscribirSocio.UseVisualStyleBackColor = true;
@@ -96,9 +101,10 @@
             // btnEmitirCarnet
             // 
             this.btnEmitirCarnet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEmitirCarnet.Location = new System.Drawing.Point(195, 196);
+            this.btnEmitirCarnet.Location = new System.Drawing.Point(131, 159);
+            this.btnEmitirCarnet.Margin = new System.Windows.Forms.Padding(2);
             this.btnEmitirCarnet.Name = "btnEmitirCarnet";
-            this.btnEmitirCarnet.Size = new System.Drawing.Size(246, 62);
+            this.btnEmitirCarnet.Size = new System.Drawing.Size(184, 50);
             this.btnEmitirCarnet.TabIndex = 8;
             this.btnEmitirCarnet.Text = "EMITIR CARNET";
             this.btnEmitirCarnet.UseVisualStyleBackColor = true;
@@ -107,9 +113,10 @@
             // btnPagarCuota
             // 
             this.btnPagarCuota.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPagarCuota.Location = new System.Drawing.Point(195, 264);
+            this.btnPagarCuota.Location = new System.Drawing.Point(131, 214);
+            this.btnPagarCuota.Margin = new System.Windows.Forms.Padding(2);
             this.btnPagarCuota.Name = "btnPagarCuota";
-            this.btnPagarCuota.Size = new System.Drawing.Size(246, 62);
+            this.btnPagarCuota.Size = new System.Drawing.Size(184, 50);
             this.btnPagarCuota.TabIndex = 9;
             this.btnPagarCuota.Text = "PAGAR CUOTA";
             this.btnPagarCuota.UseVisualStyleBackColor = true;
@@ -118,9 +125,10 @@
             // btnRegistrarActividad
             // 
             this.btnRegistrarActividad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrarActividad.Location = new System.Drawing.Point(462, 196);
+            this.btnRegistrarActividad.Location = new System.Drawing.Point(331, 159);
+            this.btnRegistrarActividad.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegistrarActividad.Name = "btnRegistrarActividad";
-            this.btnRegistrarActividad.Size = new System.Drawing.Size(246, 62);
+            this.btnRegistrarActividad.Size = new System.Drawing.Size(184, 50);
             this.btnRegistrarActividad.TabIndex = 10;
             this.btnRegistrarActividad.Text = "REGISTRAR ACTIVIDAD";
             this.btnRegistrarActividad.UseVisualStyleBackColor = true;
@@ -129,9 +137,10 @@
             // btnListarSocios
             // 
             this.btnListarSocios.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnListarSocios.Location = new System.Drawing.Point(462, 264);
+            this.btnListarSocios.Location = new System.Drawing.Point(331, 214);
+            this.btnListarSocios.Margin = new System.Windows.Forms.Padding(2);
             this.btnListarSocios.Name = "btnListarSocios";
-            this.btnListarSocios.Size = new System.Drawing.Size(246, 62);
+            this.btnListarSocios.Size = new System.Drawing.Size(184, 50);
             this.btnListarSocios.TabIndex = 11;
             this.btnListarSocios.Text = "LISTAR SOCIOS";
             this.btnListarSocios.UseVisualStyleBackColor = true;
@@ -140,19 +149,20 @@
             // btnSalir
             // 
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(402, 343);
+            this.btnSalir.Location = new System.Drawing.Point(283, 276);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(2);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(107, 48);
+            this.btnSalir.Size = new System.Drawing.Size(80, 39);
             this.btnSalir.TabIndex = 12;
             this.btnSalir.Text = "SALIR";
             this.btnSalir.UseVisualStyleBackColor = true;
             // 
             // frmPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
-            this.ClientSize = new System.Drawing.Size(932, 403);
+            this.ClientSize = new System.Drawing.Size(644, 327);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnListarSocios);
             this.Controls.Add(this.btnRegistrarActividad);
@@ -163,9 +173,11 @@
             this.Controls.Add(this.lblNoSocio);
             this.Controls.Add(this.lblSocio);
             this.Controls.Add(this.lblTitulo);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Principal";
+            this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
