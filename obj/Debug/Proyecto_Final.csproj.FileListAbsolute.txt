@@ -31,3 +31,16 @@ J:\Users\ospos\Documents\GitHub\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-
 J:\Users\ospos\Documents\GitHub\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.csproj.CoreCompileInputs.cache
 J:\Users\ospos\Documents\GitHub\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.exe
 J:\Users\ospos\Documents\GitHub\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.pdb
+C:\Users\adria\Documents\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\bin\Debug\Proyecto_Final.exe.config
+C:\Users\adria\Documents\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\bin\Debug\Proyecto_Final.exe
+C:\Users\adria\Documents\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\bin\Debug\Proyecto_Final.pdb
+C:\Users\adria\Documents\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.csproj.AssemblyReference.cache
+C:\Users\adria\Documents\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.Properties.Resources.resources
+C:\Users\adria\Documents\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.Vistas.FrmInscribirNoSocio.resources
+C:\Users\adria\Documents\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.Vistas.FrmInscribirSocio.resources
+C:\Users\adria\Documents\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.Vistas.frmLogin.resources
+C:\Users\adria\Documents\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.Vistas.frmPrincipal.resources
+C:\Users\adria\Documents\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.csproj.GenerateResource.cache
+C:\Users\adria\Documents\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.csproj.CoreCompileInputs.cache
+C:\Users\adria\Documents\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.exe
+C:\Users\adria\Documents\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.pdb

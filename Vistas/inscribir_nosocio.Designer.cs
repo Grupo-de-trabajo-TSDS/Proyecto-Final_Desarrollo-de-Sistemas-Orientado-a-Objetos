@@ -232,6 +232,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.lblTitleNoSocio);
             this.Name = "FrmInscribirNoSocio";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inscribir No Socio";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmInscribirNoSocio_FormClosed);
             this.Load += new System.EventHandler(this.FrmInscribirNoSocio_Load);

@@ -93,9 +93,11 @@
             this.txtContraseña.Location = new System.Drawing.Point(411, 198);
             this.txtContraseña.Margin = new System.Windows.Forms.Padding(2);
             this.txtContraseña.Name = "txtContraseña";
+            this.txtContraseña.PasswordChar = '*';
             this.txtContraseña.Size = new System.Drawing.Size(209, 20);
             this.txtContraseña.TabIndex = 4;
             this.toolTip1.SetToolTip(this.txtContraseña, "Esto es una prueba");
+            this.txtContraseña.UseSystemPasswordChar = true;
             this.txtContraseña.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // btnIngresar
