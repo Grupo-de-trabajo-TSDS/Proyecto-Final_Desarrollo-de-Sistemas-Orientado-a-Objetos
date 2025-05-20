@@ -18,3 +18,16 @@ C:\Users\Matias\Source\Repos\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-O
 C:\Users\Matias\Source\Repos\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.csproj.GenerateResource.cache
 C:\Users\Matias\Source\Repos\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.exe
 C:\Users\Matias\Source\Repos\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.pdb
+J:\Users\ospos\Documents\GitHub\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\bin\Debug\Proyecto_Final.exe.config
+J:\Users\ospos\Documents\GitHub\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\bin\Debug\Proyecto_Final.exe
+J:\Users\ospos\Documents\GitHub\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\bin\Debug\Proyecto_Final.pdb
+J:\Users\ospos\Documents\GitHub\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.csproj.AssemblyReference.cache
+J:\Users\ospos\Documents\GitHub\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.Properties.Resources.resources
+J:\Users\ospos\Documents\GitHub\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.Vistas.FrmInscribirNoSocio.resources
+J:\Users\ospos\Documents\GitHub\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.Vistas.FrmInscribirSocio.resources
+J:\Users\ospos\Documents\GitHub\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.Vistas.frmLogin.resources
+J:\Users\ospos\Documents\GitHub\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.Vistas.frmPrincipal.resources
+J:\Users\ospos\Documents\GitHub\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.csproj.GenerateResource.cache
+J:\Users\ospos\Documents\GitHub\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.csproj.CoreCompileInputs.cache
+J:\Users\ospos\Documents\GitHub\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.exe
+J:\Users\ospos\Documents\GitHub\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.pdb

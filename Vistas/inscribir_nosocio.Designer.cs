@@ -73,6 +73,7 @@
             this.btnVolverNoSocio.TabIndex = 2;
             this.btnVolverNoSocio.Text = "VOLVER";
             this.btnVolverNoSocio.UseVisualStyleBackColor = true;
+            this.btnVolverNoSocio.Click += new System.EventHandler(this.btnVolver_Click);
             // 
             // btnInscribirNoSocio
             // 
@@ -232,6 +233,7 @@
             this.Controls.Add(this.lblTitleNoSocio);
             this.Name = "FrmInscribirNoSocio";
             this.Text = "Inscribir No Socio";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmInscribirNoSocio_FormClosed);
             this.Load += new System.EventHandler(this.FrmInscribirNoSocio_Load);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);

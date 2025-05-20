@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Vistas"
   ],
-  "SelectedNode": "\\Proyecto_Final.sln",
+  "SelectedNode": "\\Vistas\\inscribir_nosocio.cs",
   "PreviewInSolutionExplorer": false
 }

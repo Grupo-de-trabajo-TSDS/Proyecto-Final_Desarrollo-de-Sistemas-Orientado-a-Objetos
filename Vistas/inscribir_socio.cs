@@ -21,5 +21,20 @@ namespace Proyecto_Final.Vistas
         {
 
         }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            // Abrir frmPrincipal
+            frmPrincipal inicio = new frmPrincipal();
+            inicio.Show();
+
+            // Cerrar el formulario actual
+            this.Hide(); // o this.Hide(); si querés solo ocultarlo
+        }
+
+        private void FrmInscribirSocio_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

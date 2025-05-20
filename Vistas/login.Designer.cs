@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.lblTitulo = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
@@ -36,6 +37,7 @@
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.btnIngresar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,48 +79,51 @@
             // 
             // txtUsuario
             // 
+            this.txtUsuario.Cursor = System.Windows.Forms.Cursors.Default;
             this.txtUsuario.Location = new System.Drawing.Point(411, 133);
-            this.txtUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtUsuario.Multiline = true;
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(2);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(209, 24);
+            this.txtUsuario.Size = new System.Drawing.Size(209, 20);
             this.txtUsuario.TabIndex = 3;
-            this.txtUsuario.UseWaitCursor = true;
             this.txtUsuario.TextChanged += new System.EventHandler(this.txtUsuario_TextChanged);
             // 
             // txtContraseña
             // 
+            this.txtContraseña.Cursor = System.Windows.Forms.Cursors.Default;
             this.txtContraseña.Location = new System.Drawing.Point(411, 198);
-            this.txtContraseña.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtContraseña.Multiline = true;
+            this.txtContraseña.Margin = new System.Windows.Forms.Padding(2);
             this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.Size = new System.Drawing.Size(209, 24);
+            this.txtContraseña.Size = new System.Drawing.Size(209, 20);
             this.txtContraseña.TabIndex = 4;
-            this.txtContraseña.UseWaitCursor = true;
+            this.toolTip1.SetToolTip(this.txtContraseña, "Esto es una prueba");
             this.txtContraseña.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // btnIngresar
             // 
             this.btnIngresar.Location = new System.Drawing.Point(443, 266);
-            this.btnIngresar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnIngresar.Margin = new System.Windows.Forms.Padding(2);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(128, 33);
             this.btnIngresar.TabIndex = 5;
             this.btnIngresar.Text = "INGRESAR";
             this.btnIngresar.UseVisualStyleBackColor = true;
-            this.btnIngresar.Click += new System.EventHandler(this.button1_Click);
+            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(-2, 28);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(260, 288);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // toolTip1
+            // 
+            this.toolTip1.IsBalloon = true;
             // 
             // frmLogin
             // 
@@ -133,10 +138,11 @@
             this.Controls.Add(this.lblContraseña);
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.lblTitulo);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmlogin_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -153,5 +159,6 @@
         private System.Windows.Forms.TextBox txtContraseña;
         private System.Windows.Forms.Button btnIngresar;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

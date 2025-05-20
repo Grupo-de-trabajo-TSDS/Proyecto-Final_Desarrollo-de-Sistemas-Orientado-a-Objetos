@@ -76,6 +76,7 @@ namespace Proyecto_Final.Vistas
             this.btnVolverSocio.TabIndex = 2;
             this.btnVolverSocio.Text = "VOLVER";
             this.btnVolverSocio.UseVisualStyleBackColor = true;
+            this.btnVolverSocio.Click += new System.EventHandler(this.btnVolver_Click);
             // 
             // btnInscribirSocio
             // 
@@ -121,7 +122,6 @@ namespace Proyecto_Final.Vistas
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(511, 204);
             this.tableLayoutPanel1.TabIndex = 11;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint_1);
             // 
             // txtDniSocio
             // 
@@ -237,6 +237,7 @@ namespace Proyecto_Final.Vistas
             this.Name = "FrmInscribirSocio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inscribir Socio";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmInscribirSocio_FormClosed);
             this.Load += new System.EventHandler(this.FrmInscribirSocio_Load);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);

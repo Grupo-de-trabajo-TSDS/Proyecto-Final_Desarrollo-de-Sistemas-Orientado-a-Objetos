@@ -32,11 +32,6 @@ namespace Proyecto_Final.Vistas
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
@@ -55,6 +50,29 @@ namespace Proyecto_Final.Vistas
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+            string usuario = txtUsuario.Text;
+            string contrasena = txtContraseña.Text;
+
+            // Ejemplo de validación simple 
+            if (usuario == "admin" && contrasena == "1234")
+            {
+                frmPrincipal principal = new frmPrincipal();
+                principal.Show();
+                this.Hide(); // Oculta el formulario de login
+            }
+            else
+            {
+                MessageBox.Show("Usuario o contraseña incorrectos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void frmlogin_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

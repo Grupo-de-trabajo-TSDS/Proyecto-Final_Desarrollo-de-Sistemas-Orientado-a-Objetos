@@ -34,11 +34,25 @@ namespace Proyecto_Final.Vistas
 
         private void button1_Click(object sender, EventArgs e)
         {
+            // Abrir frmInscribirNoSocio
+            FrmInscribirNoSocio inicio = new FrmInscribirNoSocio();
+            inicio.Show();
+
+            // Cerrar el formulario actual
+            this.Hide(); // o this.Hide(); si querés solo ocultarlo
 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            
+            // Abrir frmPrincipal
+            FrmInscribirSocio inicio = new FrmInscribirSocio();
+            inicio.Show();
+
+            // Cerrar el formulario actual
+            this.Hide(); // o this.Hide(); si querés solo ocultarlo
+        
 
         }
 
@@ -65,6 +79,21 @@ namespace Proyecto_Final.Vistas
         private void frmPrincipal_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            // Abrir frmPrincipal
+            frmLogin inicio = new frmLogin();
+            inicio.Show();
+
+            // Cerrar el formulario actual
+            this.Close(); // o this.Hide(); si querés solo ocultarlo
+        }
+
+        private void frmPrincipal_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
