@@ -38,6 +38,7 @@
             this.btnRegistrarActividad = new System.Windows.Forms.Button();
             this.btnListarSocios = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblTitulo
@@ -81,7 +82,7 @@
             this.btnInscribirNoSocio.Margin = new System.Windows.Forms.Padding(2);
             this.btnInscribirNoSocio.Name = "btnInscribirNoSocio";
             this.btnInscribirNoSocio.Size = new System.Drawing.Size(184, 50);
-            this.btnInscribirNoSocio.TabIndex = 6;
+            this.btnInscribirNoSocio.TabIndex = 2;
             this.btnInscribirNoSocio.Text = "INSCRIBIR NO SOCIO";
             this.btnInscribirNoSocio.UseVisualStyleBackColor = true;
             this.btnInscribirNoSocio.Click += new System.EventHandler(this.button1_Click);
@@ -93,7 +94,7 @@
             this.btnInscribirSocio.Margin = new System.Windows.Forms.Padding(2);
             this.btnInscribirSocio.Name = "btnInscribirSocio";
             this.btnInscribirSocio.Size = new System.Drawing.Size(184, 50);
-            this.btnInscribirSocio.TabIndex = 7;
+            this.btnInscribirSocio.TabIndex = 1;
             this.btnInscribirSocio.Text = "INSCRIBIR SOCIO";
             this.btnInscribirSocio.UseVisualStyleBackColor = true;
             this.btnInscribirSocio.Click += new System.EventHandler(this.button2_Click);
@@ -105,7 +106,7 @@
             this.btnEmitirCarnet.Margin = new System.Windows.Forms.Padding(2);
             this.btnEmitirCarnet.Name = "btnEmitirCarnet";
             this.btnEmitirCarnet.Size = new System.Drawing.Size(184, 50);
-            this.btnEmitirCarnet.TabIndex = 8;
+            this.btnEmitirCarnet.TabIndex = 3;
             this.btnEmitirCarnet.Text = "EMITIR CARNET";
             this.btnEmitirCarnet.UseVisualStyleBackColor = true;
             this.btnEmitirCarnet.Click += new System.EventHandler(this.button3_Click);
@@ -117,7 +118,7 @@
             this.btnPagarCuota.Margin = new System.Windows.Forms.Padding(2);
             this.btnPagarCuota.Name = "btnPagarCuota";
             this.btnPagarCuota.Size = new System.Drawing.Size(184, 50);
-            this.btnPagarCuota.TabIndex = 9;
+            this.btnPagarCuota.TabIndex = 5;
             this.btnPagarCuota.Text = "PAGAR CUOTA";
             this.btnPagarCuota.UseVisualStyleBackColor = true;
             this.btnPagarCuota.Click += new System.EventHandler(this.button4_Click);
@@ -129,7 +130,7 @@
             this.btnRegistrarActividad.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegistrarActividad.Name = "btnRegistrarActividad";
             this.btnRegistrarActividad.Size = new System.Drawing.Size(184, 50);
-            this.btnRegistrarActividad.TabIndex = 10;
+            this.btnRegistrarActividad.TabIndex = 4;
             this.btnRegistrarActividad.Text = "REGISTRAR ACTIVIDAD";
             this.btnRegistrarActividad.UseVisualStyleBackColor = true;
             this.btnRegistrarActividad.Click += new System.EventHandler(this.button5_Click);
@@ -141,7 +142,7 @@
             this.btnListarSocios.Margin = new System.Windows.Forms.Padding(2);
             this.btnListarSocios.Name = "btnListarSocios";
             this.btnListarSocios.Size = new System.Drawing.Size(184, 50);
-            this.btnListarSocios.TabIndex = 11;
+            this.btnListarSocios.TabIndex = 6;
             this.btnListarSocios.Text = "LISTAR SOCIOS";
             this.btnListarSocios.UseVisualStyleBackColor = true;
             this.btnListarSocios.Click += new System.EventHandler(this.button6_Click);
@@ -153,10 +154,19 @@
             this.btnSalir.Margin = new System.Windows.Forms.Padding(2);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(80, 39);
-            this.btnSalir.TabIndex = 12;
+            this.btnSalir.TabIndex = 7;
             this.btnSalir.Text = "SALIR";
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(450, 311);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(190, 13);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Use TAB para desplazar entre botones";
             // 
             // frmPrincipal
             // 
@@ -164,6 +174,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(644, 327);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnListarSocios);
             this.Controls.Add(this.btnRegistrarActividad);
@@ -197,5 +208,6 @@
         private System.Windows.Forms.Button btnRegistrarActividad;
         private System.Windows.Forms.Button btnListarSocios;
         private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Label label1;
     }
 }

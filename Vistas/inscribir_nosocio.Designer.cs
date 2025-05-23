@@ -35,15 +35,15 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.txtDniNoSocio = new System.Windows.Forms.TextBox();
             this.txtFechaNacimientoNoSocio = new System.Windows.Forms.TextBox();
-            this.txtContactoUrgenciaNoSocio = new System.Windows.Forms.TextBox();
             this.txtNombreNoSocio = new System.Windows.Forms.TextBox();
             this.txtApellidoNoSocio = new System.Windows.Forms.TextBox();
-            this.txtInscripcionNoSocio = new System.Windows.Forms.TextBox();
             this.txtDireccionNoSocio = new System.Windows.Forms.TextBox();
             this.txtEmailNoSocio = new System.Windows.Forms.TextBox();
             this.txtTelefonoNoSocio = new System.Windows.Forms.TextBox();
+            this.txtContactoUrgenciaNoSocio = new System.Windows.Forms.TextBox();
             this.txtFichaMedicaNoSocio = new System.Windows.Forms.TextBox();
             this.lblTitleNoSocio = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -70,7 +70,7 @@
             this.btnVolverNoSocio.Location = new System.Drawing.Point(165, 3);
             this.btnVolverNoSocio.Name = "btnVolverNoSocio";
             this.btnVolverNoSocio.Size = new System.Drawing.Size(74, 23);
-            this.btnVolverNoSocio.TabIndex = 2;
+            this.btnVolverNoSocio.TabIndex = 12;
             this.btnVolverNoSocio.Text = "VOLVER";
             this.btnVolverNoSocio.UseVisualStyleBackColor = true;
             this.btnVolverNoSocio.Click += new System.EventHandler(this.btnVolver_Click);
@@ -80,42 +80,42 @@
             this.btnInscribirNoSocio.Location = new System.Drawing.Point(84, 3);
             this.btnInscribirNoSocio.Name = "btnInscribirNoSocio";
             this.btnInscribirNoSocio.Size = new System.Drawing.Size(74, 23);
-            this.btnInscribirNoSocio.TabIndex = 1;
+            this.btnInscribirNoSocio.TabIndex = 10;
             this.btnInscribirNoSocio.Text = "INSCRIBIR";
             this.btnInscribirNoSocio.UseVisualStyleBackColor = true;
+            this.btnInscribirNoSocio.Click += new System.EventHandler(this.btnInscribir_Click);
             // 
             // btnLimpiarNoSocio
             // 
             this.btnLimpiarNoSocio.Location = new System.Drawing.Point(3, 3);
             this.btnLimpiarNoSocio.Name = "btnLimpiarNoSocio";
             this.btnLimpiarNoSocio.Size = new System.Drawing.Size(74, 23);
-            this.btnLimpiarNoSocio.TabIndex = 0;
+            this.btnLimpiarNoSocio.TabIndex = 11;
             this.btnLimpiarNoSocio.Text = "LIMPIAR";
             this.btnLimpiarNoSocio.UseVisualStyleBackColor = true;
+            this.btnLimpiarNoSocio.Click += new System.EventHandler(this.btnLimpiarNoSocio_Click);
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33332F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.tableLayoutPanel1.Controls.Add(this.txtDniNoSocio, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.txtFechaNacimientoNoSocio, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.txtContactoUrgenciaNoSocio, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.txtNombreNoSocio, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.txtApellidoNoSocio, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.txtInscripcionNoSocio, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.txtDireccionNoSocio, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.txtEmailNoSocio, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.txtTelefonoNoSocio, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.txtFichaMedicaNoSocio, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.txtDireccionNoSocio, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.txtEmailNoSocio, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.txtTelefonoNoSocio, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.txtContactoUrgenciaNoSocio, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.txtFichaMedicaNoSocio, 2, 2);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(67, 65);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 4;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.RowCount = 3;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(511, 204);
             this.tableLayoutPanel1.TabIndex = 11;
@@ -126,27 +126,21 @@
             this.txtDniNoSocio.Multiline = true;
             this.txtDniNoSocio.Name = "txtDniNoSocio";
             this.txtDniNoSocio.Size = new System.Drawing.Size(136, 23);
-            this.txtDniNoSocio.TabIndex = 7;
+            this.txtDniNoSocio.TabIndex = 1;
+            this.txtDniNoSocio.Tag = "Ingrese el DNI";
             this.txtDniNoSocio.Text = "DNI";
             this.txtDniNoSocio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtFechaNacimientoNoSocio
             // 
-            this.txtFechaNacimientoNoSocio.Location = new System.Drawing.Point(3, 54);
+            this.txtFechaNacimientoNoSocio.Location = new System.Drawing.Point(3, 71);
             this.txtFechaNacimientoNoSocio.Multiline = true;
             this.txtFechaNacimientoNoSocio.Name = "txtFechaNacimientoNoSocio";
             this.txtFechaNacimientoNoSocio.Size = new System.Drawing.Size(136, 23);
-            this.txtFechaNacimientoNoSocio.TabIndex = 11;
+            this.txtFechaNacimientoNoSocio.TabIndex = 4;
+            this.txtFechaNacimientoNoSocio.Tag = "Ingrese Fech de Nacimiento";
             this.txtFechaNacimientoNoSocio.Text = "FECHA NACIMIENTO";
-            // 
-            // txtContactoUrgenciaNoSocio
-            // 
-            this.txtContactoUrgenciaNoSocio.Location = new System.Drawing.Point(343, 105);
-            this.txtContactoUrgenciaNoSocio.Multiline = true;
-            this.txtContactoUrgenciaNoSocio.Name = "txtContactoUrgenciaNoSocio";
-            this.txtContactoUrgenciaNoSocio.Size = new System.Drawing.Size(136, 23);
-            this.txtContactoUrgenciaNoSocio.TabIndex = 12;
-            this.txtContactoUrgenciaNoSocio.Text = "CONTACTO URGENCIA";
+            this.txtFechaNacimientoNoSocio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtNombreNoSocio
             // 
@@ -154,7 +148,8 @@
             this.txtNombreNoSocio.Multiline = true;
             this.txtNombreNoSocio.Name = "txtNombreNoSocio";
             this.txtNombreNoSocio.Size = new System.Drawing.Size(136, 23);
-            this.txtNombreNoSocio.TabIndex = 14;
+            this.txtNombreNoSocio.TabIndex = 2;
+            this.txtNombreNoSocio.Tag = "Ingrese el Nombre";
             this.txtNombreNoSocio.Text = "NOMBRE";
             this.txtNombreNoSocio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -164,54 +159,65 @@
             this.txtApellidoNoSocio.Multiline = true;
             this.txtApellidoNoSocio.Name = "txtApellidoNoSocio";
             this.txtApellidoNoSocio.Size = new System.Drawing.Size(136, 23);
-            this.txtApellidoNoSocio.TabIndex = 13;
+            this.txtApellidoNoSocio.TabIndex = 3;
+            this.txtApellidoNoSocio.Tag = "Ingrese el apellido";
             this.txtApellidoNoSocio.Text = "APELLIDO";
             this.txtApellidoNoSocio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // txtInscripcionNoSocio
-            // 
-            this.txtInscripcionNoSocio.Location = new System.Drawing.Point(173, 54);
-            this.txtInscripcionNoSocio.Multiline = true;
-            this.txtInscripcionNoSocio.Name = "txtInscripcionNoSocio";
-            this.txtInscripcionNoSocio.Size = new System.Drawing.Size(136, 23);
-            this.txtInscripcionNoSocio.TabIndex = 16;
-            this.txtInscripcionNoSocio.Text = "FECHA INSCRIPCIÓN";
-            // 
             // txtDireccionNoSocio
             // 
-            this.txtDireccionNoSocio.Location = new System.Drawing.Point(343, 54);
+            this.txtDireccionNoSocio.Location = new System.Drawing.Point(173, 71);
             this.txtDireccionNoSocio.Multiline = true;
             this.txtDireccionNoSocio.Name = "txtDireccionNoSocio";
             this.txtDireccionNoSocio.Size = new System.Drawing.Size(136, 23);
-            this.txtDireccionNoSocio.TabIndex = 15;
+            this.txtDireccionNoSocio.TabIndex = 5;
+            this.txtDireccionNoSocio.Tag = "Ingrese la Dirección";
             this.txtDireccionNoSocio.Text = "DIRECCIÓN";
+            this.txtDireccionNoSocio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtEmailNoSocio
             // 
-            this.txtEmailNoSocio.Location = new System.Drawing.Point(3, 105);
+            this.txtEmailNoSocio.Location = new System.Drawing.Point(343, 71);
             this.txtEmailNoSocio.Multiline = true;
             this.txtEmailNoSocio.Name = "txtEmailNoSocio";
             this.txtEmailNoSocio.Size = new System.Drawing.Size(136, 23);
-            this.txtEmailNoSocio.TabIndex = 17;
+            this.txtEmailNoSocio.TabIndex = 6;
+            this.txtEmailNoSocio.Tag = "Ingrese el E-mail";
             this.txtEmailNoSocio.Text = "EMAIL";
+            this.txtEmailNoSocio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtTelefonoNoSocio
             // 
-            this.txtTelefonoNoSocio.Location = new System.Drawing.Point(173, 105);
+            this.txtTelefonoNoSocio.Location = new System.Drawing.Point(3, 139);
             this.txtTelefonoNoSocio.Multiline = true;
             this.txtTelefonoNoSocio.Name = "txtTelefonoNoSocio";
             this.txtTelefonoNoSocio.Size = new System.Drawing.Size(136, 23);
-            this.txtTelefonoNoSocio.TabIndex = 18;
+            this.txtTelefonoNoSocio.TabIndex = 7;
+            this.txtTelefonoNoSocio.Tag = "Ingrese el Teléfono";
             this.txtTelefonoNoSocio.Text = "TELÉFONO";
+            this.txtTelefonoNoSocio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtContactoUrgenciaNoSocio
+            // 
+            this.txtContactoUrgenciaNoSocio.Location = new System.Drawing.Point(173, 139);
+            this.txtContactoUrgenciaNoSocio.Multiline = true;
+            this.txtContactoUrgenciaNoSocio.Name = "txtContactoUrgenciaNoSocio";
+            this.txtContactoUrgenciaNoSocio.Size = new System.Drawing.Size(136, 23);
+            this.txtContactoUrgenciaNoSocio.TabIndex = 8;
+            this.txtContactoUrgenciaNoSocio.Tag = "Ingrese Contacto de Urgencia";
+            this.txtContactoUrgenciaNoSocio.Text = "CONTACTO URGENCIA";
+            this.txtContactoUrgenciaNoSocio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtFichaMedicaNoSocio
             // 
-            this.txtFichaMedicaNoSocio.Location = new System.Drawing.Point(173, 156);
+            this.txtFichaMedicaNoSocio.Location = new System.Drawing.Point(343, 139);
             this.txtFichaMedicaNoSocio.Multiline = true;
             this.txtFichaMedicaNoSocio.Name = "txtFichaMedicaNoSocio";
             this.txtFichaMedicaNoSocio.Size = new System.Drawing.Size(136, 23);
-            this.txtFichaMedicaNoSocio.TabIndex = 19;
+            this.txtFichaMedicaNoSocio.TabIndex = 9;
+            this.txtFichaMedicaNoSocio.Tag = "Ingrese la Ficha Medica";
             this.txtFichaMedicaNoSocio.Text = "FICHA MÉDICA";
+            this.txtFichaMedicaNoSocio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblTitleNoSocio
             // 
@@ -223,11 +229,23 @@
             this.lblTitleNoSocio.TabIndex = 10;
             this.lblTitleNoSocio.Text = "INSCRIBIR NO SOCIO";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.Menu;
+            this.label1.Location = new System.Drawing.Point(451, 305);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(189, 13);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Use TAB para desplazar entre campos";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // FrmInscribirNoSocio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(644, 327);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.lblTitleNoSocio);
@@ -256,11 +274,11 @@
         private System.Windows.Forms.TextBox txtContactoUrgenciaNoSocio;
         private System.Windows.Forms.TextBox txtNombreNoSocio;
         private System.Windows.Forms.TextBox txtApellidoNoSocio;
-        private System.Windows.Forms.TextBox txtInscripcionNoSocio;
         private System.Windows.Forms.TextBox txtDireccionNoSocio;
         private System.Windows.Forms.TextBox txtEmailNoSocio;
         private System.Windows.Forms.TextBox txtTelefonoNoSocio;
         private System.Windows.Forms.TextBox txtFichaMedicaNoSocio;
         private System.Windows.Forms.Label lblTitleNoSocio;
+        private System.Windows.Forms.Label label1;
     }
 }

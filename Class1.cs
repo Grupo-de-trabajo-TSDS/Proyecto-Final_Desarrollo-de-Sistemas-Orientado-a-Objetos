@@ -1,11 +1,11 @@
 ﻿using System;
+using MySql.Data.MySqlClient;
+using Proyecto_Final;
 
 public class Persona
 {
-	public Class1()
-	{
-		private string dni;
-		private string apellido;
+    private string dni;
+    private string apellido;
     private string nombre;
     private string fechanac;
     private string fechainscrip;
@@ -31,7 +31,7 @@ public class Persona
     }
 
     //getter y setter
-    public string Dni{ get { return dni; } set { dni = value; }}
+    public string Dni { get { return dni; } set { dni = value; } }
     public string Apellido { get { return apellido; } set { apellido = value; } }
     public string Nombre { get { return nombre; } set { nombre = value; } }
     public string Fechanac { get { return fechanac; } set { fechanac = value; } }
@@ -42,52 +42,101 @@ public class Persona
     public string Conturgencia { get { return conturgencia; } set { conturgencia = value; } }
     public string Fichamed { get { return fichamed; } set { fichamed = value; } }
 }
-}
 
 public class Socio : Persona
 {
     private bool estado;
-    
-    //constructor
 
-    :base(dni, apellido, nombre, fechanac, fechainscrip, direccion, email, telefono, conturgencia, fichamed)
-    
+    //constructor
+    public Socio(string dni, string apellido, string nombre, string fechanac, string fechainscrip, string direccion, string email, string telefono, string conturgencia, string fichamed, bool estado) : base(dni, apellido, nombre, fechanac, fechainscrip, direccion, email, telefono, conturgencia, fichamed)
     {
         this.estado = estado;
     }
 
-//getter y setter
+    //getter y setter
     public bool Estado { get { return estado; } set { estado = value; } }
  
    
 
 //methods    
 
-public void suspender()
+    public void suspender()
     {
-        //code to inscribe a member
+        
     }
-    public void inscripcionSocio()
-    {
-        //code to suspend a member
-    }
+    
     public void generarCarnet()
     {
-        //code to inscribe a non-member
+        
     }
+
+    public static bool inscripcionsocio(Socio nuevo)
+    {
+        try
+        {
+            using (var conn = new Conexion())
+            {
+                var con = conn.Abrir();
+                string query = @"INSERT INTO Socio 
+                            (dni, apellido, nombre, fechanac, fechainscrip, direccion, email, telefono, conturgencia, fichamed, socio, estado) 
+                            VALUES 
+                            (@dni, @apellido, @nombre, @fechanac, @fechainscrip, @direccion, @email, @telefono, @conturgencia, @fichamed, 1, 1)";
+                using (var cmd = new MySqlCommand(query, con))
+                {
+                    cmd.Parameters.AddWithValue("@dni", nuevo.Dni);
+                    cmd.Parameters.AddWithValue("@apellido", nuevo.Apellido);
+                    cmd.Parameters.AddWithValue("@nombre", nuevo.Nombre);
+                    cmd.Parameters.AddWithValue("@fechanac", nuevo.Fechanac);
+                    cmd.Parameters.AddWithValue("@fechainscrip", nuevo.Fechainscrip);
+                    cmd.Parameters.AddWithValue("@direccion", nuevo.Direccion);
+                    cmd.Parameters.AddWithValue("@email", nuevo.Email);
+                    cmd.Parameters.AddWithValue("@telefono", nuevo.Telefono);
+                    cmd.Parameters.AddWithValue("@conturgencia", nuevo.Conturgencia);
+                    cmd.Parameters.AddWithValue("@fichamed", nuevo.Fichamed);
+                    cmd.Parameters.AddWithValue("@estado", nuevo.Estado ? 1 : 0);
+
+                    int resultado = cmd.ExecuteNonQuery();
+                    return resultado > 0;
+                }
+            }
+        }
+        catch
+        {
+            return false;
+        }
+    }
+
+    public static bool ExisteSocioPorDNI(string dni)
+    {
+        using (Conexion conpar = new Conexion())
+        {
+            using (MySqlConnection conn = conpar.Abrir())
+            {
+                string query = "SELECT COUNT(*) FROM Socio WHERE dni = @dni";
+
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@dni", dni);
+                    int cantidad = Convert.ToInt32(cmd.ExecuteScalar());
+                    return cantidad > 0;
+                }
+            }
+        }
+    }
+
 }
 
 public class NoSocio : Persona
 {
-    
+
     //constructor
-    :base(string dni, string apellido, string nombre, string fechanac, string fechainscrip, string direccion, string email, string telefono, string conturgencia, string fichamed, string motivo) : base(dni, apellido, nombre, fechanac, fechainscrip, direccion, email, telefono, conturgencia, fichamed)
-        
-    //methods
-    public void inscripcionNoSocio()
+    public NoSocio(string dni, string apellido, string nombre, string fechanac, string fechainscrip, string direccion, string email, string telefono, string conturgencia, string fichamed) : base(dni, apellido, nombre, fechanac, fechainscrip, direccion, email, telefono, conturgencia, fichamed)
     {
-        //code to inscribe a non-member
+
     }
+
+    //methods
+   
 
     public void registrarActividad()
     {
@@ -98,4 +147,59 @@ public class NoSocio : Persona
     {
         //code to pay for a non-member activity
     }
+
+    public static bool inscripcionnosocio(NoSocio nuevo)
+    {
+        try
+        {
+            using (var conn = new Conexion())
+            {
+                var con = conn.Abrir();
+                string query = @"INSERT INTO NoSocio 
+                            (dni, apellido, nombre, fechanac, fechainscrip, direccion, email, telefono, conturgencia, fichamed) 
+                            VALUES 
+                            (@dni, @apellido, @nombre, @fechanac, @fechainscrip, @direccion, @email, @telefono, @conturgencia, @fichamed)";
+                using (var cmd = new MySqlCommand(query, con))
+                {
+                    cmd.Parameters.AddWithValue("@dni", nuevo.Dni);
+                    cmd.Parameters.AddWithValue("@apellido", nuevo.Apellido);
+                    cmd.Parameters.AddWithValue("@nombre", nuevo.Nombre);
+                    cmd.Parameters.AddWithValue("@fechanac", nuevo.Fechanac);
+                    cmd.Parameters.AddWithValue("@fechainscrip", nuevo.Fechainscrip);
+                    cmd.Parameters.AddWithValue("@direccion", nuevo.Direccion);
+                    cmd.Parameters.AddWithValue("@email", nuevo.Email);
+                    cmd.Parameters.AddWithValue("@telefono", nuevo.Telefono);
+                    cmd.Parameters.AddWithValue("@conturgencia", nuevo.Conturgencia);
+                    cmd.Parameters.AddWithValue("@fichamed", nuevo.Fichamed);
+                    
+
+                    int resultado = cmd.ExecuteNonQuery();
+                    return resultado > 0;
+                }
+            }
+        }
+        catch
+        {
+            return false;
+        }
+    }
+
+    public static bool ExisteNoSocioPorDNI(string dni)
+    {
+        using (Conexion conpar = new Conexion())
+        {
+            using (MySqlConnection conn = conpar.Abrir())
+            {
+                string query = "SELECT COUNT(*) FROM NoSocio WHERE dni = @dni";
+
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@dni", dni);
+                    int cantidad = Convert.ToInt32(cmd.ExecuteScalar());
+                    return cantidad > 0;
+                }
+            }
+        }
+    }
 }
+

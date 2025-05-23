@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+  
 
 namespace Proyecto_Final.Vistas
 {
@@ -29,7 +30,7 @@ namespace Proyecto_Final.Vistas
 
         private void label1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -51,7 +52,6 @@ namespace Proyecto_Final.Vistas
         {
 
         }
-
         private void btnIngresar_Click(object sender, EventArgs e)
         {
             string usuario = txtUsuario.Text;

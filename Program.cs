@@ -17,6 +17,9 @@ namespace Proyecto_Final
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Vistas.frmLogin());
+
         }
     }
 }
+
+    
