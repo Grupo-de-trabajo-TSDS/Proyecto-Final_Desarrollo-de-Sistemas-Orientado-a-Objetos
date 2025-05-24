@@ -10,11 +10,13 @@ namespace Proyecto_Final
         private static readonly string cadena = "server=mysql-gttsds.alwaysdata.net; database=gttsds_1; user=gttsds; password=grab&&71;";
         private MySqlConnection conn;
 
+        //Constructor
         public  Conexion()
         {
             conn = new MySqlConnection(cadena);
         }
 
+        //Métodos para trabajar conexiones
         public MySqlConnection Abrir()
         {
             if (conn.State == System.Data.ConnectionState.Closed)

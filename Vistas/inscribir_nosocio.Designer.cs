@@ -130,6 +130,7 @@
             this.txtDniNoSocio.Tag = "Ingrese el DNI";
             this.txtDniNoSocio.Text = "DNI";
             this.txtDniNoSocio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtDniNoSocio.Leave += new System.EventHandler(this.txtDNI_Leave);
             // 
             // txtFechaNacimientoNoSocio
             // 

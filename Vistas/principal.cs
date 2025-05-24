@@ -71,7 +71,7 @@ namespace Proyecto_Final.Vistas
 
         private void frmPrincipal_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
