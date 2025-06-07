@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
+using Org.BouncyCastle.Bcpg;
+
 
 
 namespace Proyecto_Final.Vistas
@@ -17,12 +19,18 @@ namespace Proyecto_Final.Vistas
             this.AutoValidate = AutoValidate.Disable;
         
         }
-
+        //Metodo para verificación de DNI al salir del campo de texto:
+        //Al ingresar un DNI, chequea si el campo está vacío o no es numérico
+        // si se cumple lo anterior, se verifica si ya existe un socio con ese DNI en la base de datos
         private void txtDNI_Leave(object sender, EventArgs e)
         {
             string dni = txtDniSocio.Text.Trim();
-            if (dni != "")
+            if (!Utilidades.ValidarNumerico(txtDniSocio, "DNI"))
             {
+                txtDniSocio.Focus();
+            }
+            else 
+            { 
                 if (Socio.ExisteSocioPorDNI(dni))
                 {
                     MessageBox.Show("Este DNI ya está registrado.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -30,16 +38,21 @@ namespace Proyecto_Final.Vistas
                     txtDniSocio.Focus();
                 }
             }
-        }
-
+        }   
+            
         private void btnInscribir_Click(object sender, EventArgs e)
         {
-                Socio nuevo = new Socio(
+            dtpFechaNacimientoSocio.Format = DateTimePickerFormat.Custom;
+            dtpFechaNacimientoSocio.CustomFormat = "dd/MM/yyyy";
+
+
+
+            Socio nuevo = new Socio(
                 txtDniSocio.Text.Trim(),
                 txtApellidoSocio.Text.Trim(),
                 txtNombreSocio.Text.Trim(),
-                txtFechaNacimientoSocio.Text.ToString(),
-                DateTime.Now.ToString("dd/MM/yyyy"),
+                dtpFechaNacimientoSocio.Value.ToString("yyyy-MM-dd"),                 
+                DateTime.Now.ToString("yyyy-MM-dd"),
                 txtDireccionSocio.Text.Trim(),
                 txtEmailSocio.Text.Trim(),
                 txtTelefonoSocio.Text.Trim(),
@@ -90,6 +103,56 @@ namespace Proyecto_Final.Vistas
             Utilidades.LimpiarControles(this, txtDniSocio); // 'txtDni' es el control donde debe quedar el foco
         
 
+        }
+
+        private void txtNombreSocio_Leave(object sender, EventArgs e)
+        {
+            if( !Utilidades.ValidarCampoNoVacio(txtNombreSocio, "Nombre"))
+                txtNombreSocio.Focus();
+        }
+
+        private void txtApellidoSocio_Leave(object sender, EventArgs e)
+        {
+            if (!Utilidades.ValidarCampoNoVacio(txtApellidoSocio, "Apellido"))
+                txtApellidoSocio.Focus();
+        }
+
+        private void dtpFechaNacimientoSocio_Leave(object sender, EventArgs e)
+        {
+            if (!Utilidades.ValidarFechaNacimiento(dtpFechaNacimientoSocio))
+                dtpFechaNacimientoSocio.Focus();
+        }
+
+        private void txtDireccionSocio_Leave(object sender, EventArgs e)
+        {
+            if (!Utilidades.ValidarCampoNoVacio(txtDireccionSocio, "Direccion"))
+                txtDireccionSocio.Focus();
+        }
+
+        private void txtEmailSocio_Leave(object sender, EventArgs e)
+        {
+            string email = txtEmailSocio.Text.Trim();
+            if (!Utilidades.ValidarEmail(txtEmailSocio) || string.IsNullOrWhiteSpace(email))
+               txtEmailSocio.Focus();
+            
+        }
+
+        private void txtTelefonoSocio_Leave(object sender, EventArgs e)
+        {
+            if (!Utilidades.ValidarNumerico(txtTelefonoSocio, "Telefono Socio"))
+                txtTelefonoSocio.Focus();
+        }
+
+        private void txtContactoUrgenciaSocio_Leave(object sender, EventArgs e)
+        {
+            if (!Utilidades.ValidarCampoNoVacio(txtContactoUrgenciaSocio, "Contacto Urgencia"))
+                txtContactoUrgenciaSocio.Focus();
+        }
+
+        private void txtFichaMedicaSocio_Leave(object sender, EventArgs e)
+        {
+            if (!Utilidades.ValidarNumerico(txtFichaMedicaSocio, "Ficha"))
+                txtFichaMedicaSocio.Focus();
         }
     }
 }

@@ -31,6 +31,7 @@ namespace Proyecto_Final.Vistas
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.btnLimpiarSocio = new System.Windows.Forms.Button();
             this.btnInscribirSocio = new System.Windows.Forms.Button();
@@ -39,14 +40,15 @@ namespace Proyecto_Final.Vistas
             this.txtDniSocio = new System.Windows.Forms.TextBox();
             this.txtNombreSocio = new System.Windows.Forms.TextBox();
             this.txtApellidoSocio = new System.Windows.Forms.TextBox();
-            this.txtFechaNacimientoSocio = new System.Windows.Forms.TextBox();
             this.txtDireccionSocio = new System.Windows.Forms.TextBox();
             this.txtEmailSocio = new System.Windows.Forms.TextBox();
             this.txtTelefonoSocio = new System.Windows.Forms.TextBox();
             this.txtContactoUrgenciaSocio = new System.Windows.Forms.TextBox();
             this.txtFichaMedicaSocio = new System.Windows.Forms.TextBox();
+            this.dtpFechaNacimientoSocio = new System.Windows.Forms.DateTimePicker();
             this.lblTitleSocio = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -107,12 +109,12 @@ namespace Proyecto_Final.Vistas
             this.tableLayoutPanel1.Controls.Add(this.txtDniSocio, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.txtNombreSocio, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.txtApellidoSocio, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.txtFechaNacimientoSocio, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.txtDireccionSocio, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.txtEmailSocio, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.txtTelefonoSocio, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.txtContactoUrgenciaSocio, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.txtFichaMedicaSocio, 2, 2);
+            this.tableLayoutPanel1.Controls.Add(this.dtpFechaNacimientoSocio, 0, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(67, 65);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
@@ -136,6 +138,7 @@ namespace Proyecto_Final.Vistas
             this.txtDniSocio.Tag = "Ingrese el DNI";
             this.txtDniSocio.Text = "DNI";
             this.txtDniSocio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.txtDniSocio, "Ingrese DNI");
             this.txtDniSocio.Leave += new System.EventHandler(this.txtDNI_Leave);
             // 
             // txtNombreSocio
@@ -148,6 +151,8 @@ namespace Proyecto_Final.Vistas
             this.txtNombreSocio.Tag = "Ingrese el nombre";
             this.txtNombreSocio.Text = "NOMBRE";
             this.txtNombreSocio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.txtNombreSocio, "Nombre");
+            this.txtNombreSocio.Leave += new System.EventHandler(this.txtNombreSocio_Leave);
             // 
             // txtApellidoSocio
             // 
@@ -159,17 +164,8 @@ namespace Proyecto_Final.Vistas
             this.txtApellidoSocio.Tag = "Ingrese el apellido";
             this.txtApellidoSocio.Text = "APELLIDO";
             this.txtApellidoSocio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtFechaNacimientoSocio
-            // 
-            this.txtFechaNacimientoSocio.Location = new System.Drawing.Point(3, 71);
-            this.txtFechaNacimientoSocio.Multiline = true;
-            this.txtFechaNacimientoSocio.Name = "txtFechaNacimientoSocio";
-            this.txtFechaNacimientoSocio.Size = new System.Drawing.Size(136, 23);
-            this.txtFechaNacimientoSocio.TabIndex = 4;
-            this.txtFechaNacimientoSocio.Tag = "Fecha de Nacimiento";
-            this.txtFechaNacimientoSocio.Text = "FECHA NACIMIENTO";
-            this.txtFechaNacimientoSocio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.txtApellidoSocio, "Apellido");
+            this.txtApellidoSocio.Leave += new System.EventHandler(this.txtApellidoSocio_Leave);
             // 
             // txtDireccionSocio
             // 
@@ -181,6 +177,8 @@ namespace Proyecto_Final.Vistas
             this.txtDireccionSocio.Tag = "Dirección";
             this.txtDireccionSocio.Text = "DIRECCION";
             this.txtDireccionSocio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.txtDireccionSocio, "Dirección");
+            this.txtDireccionSocio.Leave += new System.EventHandler(this.txtDireccionSocio_Leave);
             // 
             // txtEmailSocio
             // 
@@ -192,6 +190,8 @@ namespace Proyecto_Final.Vistas
             this.txtEmailSocio.Tag = "E-mail";
             this.txtEmailSocio.Text = "EMAIL";
             this.txtEmailSocio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.txtEmailSocio, "Email");
+            this.txtEmailSocio.Leave += new System.EventHandler(this.txtEmailSocio_Leave);
             // 
             // txtTelefonoSocio
             // 
@@ -203,6 +203,8 @@ namespace Proyecto_Final.Vistas
             this.txtTelefonoSocio.Tag = "Teléfono";
             this.txtTelefonoSocio.Text = "TELEFONO";
             this.txtTelefonoSocio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.txtTelefonoSocio, "Teléfono");
+            this.txtTelefonoSocio.Leave += new System.EventHandler(this.txtTelefonoSocio_Leave);
             // 
             // txtContactoUrgenciaSocio
             // 
@@ -214,6 +216,8 @@ namespace Proyecto_Final.Vistas
             this.txtContactoUrgenciaSocio.Tag = "Contacto de Urgencia";
             this.txtContactoUrgenciaSocio.Text = "CONTACTO URGENCIAS";
             this.txtContactoUrgenciaSocio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.txtContactoUrgenciaSocio, "Contacto Urgencias");
+            this.txtContactoUrgenciaSocio.Leave += new System.EventHandler(this.txtContactoUrgenciaSocio_Leave);
             // 
             // txtFichaMedicaSocio
             // 
@@ -225,6 +229,17 @@ namespace Proyecto_Final.Vistas
             this.txtFichaMedicaSocio.Tag = "Ficha médica";
             this.txtFichaMedicaSocio.Text = "FICHA MEDICA";
             this.txtFichaMedicaSocio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.txtFichaMedicaSocio, "Nº registro ficha médica");
+            this.txtFichaMedicaSocio.Leave += new System.EventHandler(this.txtFichaMedicaSocio_Leave);
+            // 
+            // dtpFechaNacimientoSocio
+            // 
+            this.dtpFechaNacimientoSocio.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpFechaNacimientoSocio.Location = new System.Drawing.Point(3, 71);
+            this.dtpFechaNacimientoSocio.Name = "dtpFechaNacimientoSocio";
+            this.dtpFechaNacimientoSocio.Size = new System.Drawing.Size(164, 20);
+            this.dtpFechaNacimientoSocio.TabIndex = 4;
+            this.dtpFechaNacimientoSocio.Leave += new System.EventHandler(this.dtpFechaNacimientoSocio_Leave);
             // 
             // lblTitleSocio
             // 
@@ -245,8 +260,13 @@ namespace Proyecto_Final.Vistas
             this.label1.TabIndex = 13;
             this.label1.Text = "Use TAB para desplazar entre campos";
             // 
+            // toolTip1
+            // 
+            this.toolTip1.AutomaticDelay = 50;
+            // 
             // FrmInscribirSocio
             // 
+            this.AccessibleName = "txtFechaNacimientoSocio";
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(644, 327);
@@ -280,7 +300,6 @@ namespace Proyecto_Final.Vistas
         private System.Windows.Forms.Button btnLimpiarSocio;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TextBox txtDniSocio;
-        private System.Windows.Forms.TextBox txtFechaNacimientoSocio;
         private System.Windows.Forms.TextBox txtContactoUrgenciaSocio;
         private System.Windows.Forms.TextBox txtNombreSocio;
         private System.Windows.Forms.TextBox txtApellidoSocio;
@@ -290,5 +309,7 @@ namespace Proyecto_Final.Vistas
         private System.Windows.Forms.TextBox txtFichaMedicaSocio;
         private System.Windows.Forms.Label lblTitleSocio;
         private Label label1;
+        private ToolTip toolTip1;
+        private DateTimePicker dtpFechaNacimientoSocio;
     }
 }

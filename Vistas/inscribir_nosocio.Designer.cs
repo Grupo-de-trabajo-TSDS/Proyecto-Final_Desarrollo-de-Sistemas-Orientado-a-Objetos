@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.btnVolverNoSocio = new System.Windows.Forms.Button();
             this.btnInscribirNoSocio = new System.Windows.Forms.Button();
             this.btnLimpiarNoSocio = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.txtDniNoSocio = new System.Windows.Forms.TextBox();
-            this.txtFechaNacimientoNoSocio = new System.Windows.Forms.TextBox();
             this.txtNombreNoSocio = new System.Windows.Forms.TextBox();
             this.txtApellidoNoSocio = new System.Windows.Forms.TextBox();
             this.txtDireccionNoSocio = new System.Windows.Forms.TextBox();
@@ -44,6 +44,8 @@
             this.txtFichaMedicaNoSocio = new System.Windows.Forms.TextBox();
             this.lblTitleNoSocio = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.dtpFechaNacimientoNoSocio = new System.Windows.Forms.DateTimePicker();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -102,7 +104,6 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.tableLayoutPanel1.Controls.Add(this.txtDniNoSocio, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.txtFechaNacimientoNoSocio, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.txtNombreNoSocio, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.txtApellidoNoSocio, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.txtDireccionNoSocio, 1, 1);
@@ -110,6 +111,7 @@
             this.tableLayoutPanel1.Controls.Add(this.txtTelefonoNoSocio, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.txtContactoUrgenciaNoSocio, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.txtFichaMedicaNoSocio, 2, 2);
+            this.tableLayoutPanel1.Controls.Add(this.dtpFechaNacimientoNoSocio, 0, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(67, 65);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
@@ -130,18 +132,8 @@
             this.txtDniNoSocio.Tag = "Ingrese el DNI";
             this.txtDniNoSocio.Text = "DNI";
             this.txtDniNoSocio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.txtDniNoSocio, "Ingrese DNI");
             this.txtDniNoSocio.Leave += new System.EventHandler(this.txtDNI_Leave);
-            // 
-            // txtFechaNacimientoNoSocio
-            // 
-            this.txtFechaNacimientoNoSocio.Location = new System.Drawing.Point(3, 71);
-            this.txtFechaNacimientoNoSocio.Multiline = true;
-            this.txtFechaNacimientoNoSocio.Name = "txtFechaNacimientoNoSocio";
-            this.txtFechaNacimientoNoSocio.Size = new System.Drawing.Size(136, 23);
-            this.txtFechaNacimientoNoSocio.TabIndex = 4;
-            this.txtFechaNacimientoNoSocio.Tag = "Ingrese Fech de Nacimiento";
-            this.txtFechaNacimientoNoSocio.Text = "FECHA NACIMIENTO";
-            this.txtFechaNacimientoNoSocio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtNombreNoSocio
             // 
@@ -153,6 +145,7 @@
             this.txtNombreNoSocio.Tag = "Ingrese el Nombre";
             this.txtNombreNoSocio.Text = "NOMBRE";
             this.txtNombreNoSocio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.txtNombreNoSocio, "Ingrese Nombre");
             // 
             // txtApellidoNoSocio
             // 
@@ -164,6 +157,7 @@
             this.txtApellidoNoSocio.Tag = "Ingrese el apellido";
             this.txtApellidoNoSocio.Text = "APELLIDO";
             this.txtApellidoNoSocio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.txtApellidoNoSocio, "Ingrese Apellido");
             // 
             // txtDireccionNoSocio
             // 
@@ -175,6 +169,7 @@
             this.txtDireccionNoSocio.Tag = "Ingrese la Dirección";
             this.txtDireccionNoSocio.Text = "DIRECCIÓN";
             this.txtDireccionNoSocio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.txtDireccionNoSocio, "Ingrese Dirección");
             // 
             // txtEmailNoSocio
             // 
@@ -186,6 +181,7 @@
             this.txtEmailNoSocio.Tag = "Ingrese el E-mail";
             this.txtEmailNoSocio.Text = "EMAIL";
             this.txtEmailNoSocio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.txtEmailNoSocio, "Ingrese Email");
             // 
             // txtTelefonoNoSocio
             // 
@@ -197,6 +193,7 @@
             this.txtTelefonoNoSocio.Tag = "Ingrese el Teléfono";
             this.txtTelefonoNoSocio.Text = "TELÉFONO";
             this.txtTelefonoNoSocio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.txtTelefonoNoSocio, "Ingrese Teléfono");
             // 
             // txtContactoUrgenciaNoSocio
             // 
@@ -208,6 +205,7 @@
             this.txtContactoUrgenciaNoSocio.Tag = "Ingrese Contacto de Urgencia";
             this.txtContactoUrgenciaNoSocio.Text = "CONTACTO URGENCIA";
             this.txtContactoUrgenciaNoSocio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.txtContactoUrgenciaNoSocio, "Ingrese Contacto Urgencia");
             // 
             // txtFichaMedicaNoSocio
             // 
@@ -219,6 +217,7 @@
             this.txtFichaMedicaNoSocio.Tag = "Ingrese la Ficha Medica";
             this.txtFichaMedicaNoSocio.Text = "FICHA MÉDICA";
             this.txtFichaMedicaNoSocio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.txtFichaMedicaNoSocio, "Nº registro Ficha Médica");
             // 
             // lblTitleNoSocio
             // 
@@ -240,6 +239,19 @@
             this.label1.TabIndex = 13;
             this.label1.Text = "Use TAB para desplazar entre campos";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // toolTip1
+            // 
+            this.toolTip1.AutomaticDelay = 50;
+            // 
+            // dtpFechaNacimientoNoSocio
+            // 
+            this.dtpFechaNacimientoNoSocio.CustomFormat = "dd/MM/yyyy";
+            this.dtpFechaNacimientoNoSocio.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpFechaNacimientoNoSocio.Location = new System.Drawing.Point(3, 71);
+            this.dtpFechaNacimientoNoSocio.Name = "dtpFechaNacimientoNoSocio";
+            this.dtpFechaNacimientoNoSocio.Size = new System.Drawing.Size(136, 20);
+            this.dtpFechaNacimientoNoSocio.TabIndex = 10;
             // 
             // FrmInscribirNoSocio
             // 
@@ -271,7 +283,6 @@
         private System.Windows.Forms.Button btnLimpiarNoSocio;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TextBox txtDniNoSocio;
-        private System.Windows.Forms.TextBox txtFechaNacimientoNoSocio;
         private System.Windows.Forms.TextBox txtContactoUrgenciaNoSocio;
         private System.Windows.Forms.TextBox txtNombreNoSocio;
         private System.Windows.Forms.TextBox txtApellidoNoSocio;
@@ -281,5 +292,7 @@
         private System.Windows.Forms.TextBox txtFichaMedicaNoSocio;
         private System.Windows.Forms.Label lblTitleNoSocio;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.DateTimePicker dtpFechaNacimientoNoSocio;
     }
 }

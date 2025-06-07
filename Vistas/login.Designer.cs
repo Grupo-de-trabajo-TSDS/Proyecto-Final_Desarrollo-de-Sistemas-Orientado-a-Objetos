@@ -85,6 +85,7 @@
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(209, 20);
             this.txtUsuario.TabIndex = 3;
+            this.toolTip1.SetToolTip(this.txtUsuario, "Nombre de Usuario (admin)");
             this.txtUsuario.TextChanged += new System.EventHandler(this.txtUsuario_TextChanged);
             // 
             // txtContraseña
@@ -96,7 +97,7 @@
             this.txtContraseña.PasswordChar = '*';
             this.txtContraseña.Size = new System.Drawing.Size(209, 20);
             this.txtContraseña.TabIndex = 4;
-            this.toolTip1.SetToolTip(this.txtContraseña, "Esto es una prueba");
+            this.toolTip1.SetToolTip(this.txtContraseña, "Contraseña (1234)");
             this.txtContraseña.UseSystemPasswordChar = true;
             this.txtContraseña.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -125,7 +126,11 @@
             // 
             // toolTip1
             // 
+            this.toolTip1.AutomaticDelay = 50;
+            this.toolTip1.AutoPopDelay = 5000;
+            this.toolTip1.InitialDelay = 50;
             this.toolTip1.IsBalloon = true;
+            this.toolTip1.ReshowDelay = 10;
             // 
             // frmLogin
             // 

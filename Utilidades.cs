@@ -52,6 +52,58 @@ namespace Proyecto_Final
             // Opcional: enfocar el primer control
             primerControl?.Focus();
         }
+
+        public static  bool ValidarCampoNoVacio(Control control, string nombreCampo)
+        {
+            if (string.IsNullOrWhiteSpace(control.Text))
+            {
+                control.BackColor = Color.MistyRose;
+                MessageBox.Show($"El campo {nombreCampo} no puede estar vacío.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                
+                return false;
+            }
+            control.BackColor = SystemColors.Window;
+            return true;
+        }
+
+        public static bool ValidarEmail(Control control)
+        {
+            if (!System.Text.RegularExpressions.Regex.IsMatch(control.Text, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
+            {
+                control.BackColor = Color.MistyRose;
+                MessageBox.Show("El correo electrónico no es válido.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+            control.BackColor = SystemColors.Window;
+            return true;
+        }
+
+        public static bool ValidarNumerico(Control control, string nombreCampo)
+        {
+            if ( !int.TryParse(control.Text, out int value) || value==0 )
+            {
+                control.BackColor = Color.MistyRose;
+                MessageBox.Show($"El campo {nombreCampo} debe ser numérico.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+            control.BackColor = SystemColors.Window;
+            return true;
+        }
+
+        public static bool ValidarFechaNacimiento(DateTimePicker picker)
+        {
+            if (picker.Value.Date == DateTime.Now.Date)
+            {
+                picker.CalendarMonthBackground = Color.MistyRose;
+                MessageBox.Show("La fecha de nacimiento no puede ser la fecha actual.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+            picker.CalendarMonthBackground = SystemColors.Window;
+            return true;
+        }
+
     }
+
+
 }
 

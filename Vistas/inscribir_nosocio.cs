@@ -28,7 +28,11 @@ namespace Proyecto_Final.Vistas
         private void txtDNI_Leave(object sender, EventArgs e)
         {
             string dni = txtDniNoSocio.Text.Trim();
-            if (dni != "")
+            if (!Utilidades.ValidarNumerico(txtDniNoSocio, "DNI"))
+            {
+                txtDniNoSocio.Focus();
+            }
+            else
             {
                 if (NoSocio.ExisteNoSocioPorDNI(dni))
                 {
@@ -37,18 +41,22 @@ namespace Proyecto_Final.Vistas
                     txtDniNoSocio.Focus();
                 }
             }
+            
         }
 
 
         private void btnInscribir_Click(object sender, EventArgs e)
         {
+            dtpFechaNacimientoNoSocio.Format = DateTimePickerFormat.Custom;
+            dtpFechaNacimientoNoSocio.CustomFormat = "dd/MM/yyyy";
+
             NoSocio nuevo = new NoSocio(
            
                 txtDniNoSocio.Text.Trim(),
                 txtApellidoNoSocio.Text.Trim(),
                 txtNombreNoSocio.Text.Trim(),
-                txtFechaNacimientoNoSocio.Text.ToString(),
-                DateTime.Now.ToString("dd-MM-yyyy"),
+                dtpFechaNacimientoNoSocio.Value.ToString("yyyy-MM-dd"),
+                DateTime.Now.ToString("yyyy-MM-dd"),
                 txtDireccionNoSocio.Text.Trim(),
                 txtEmailNoSocio.Text.Trim(),
                 txtTelefonoNoSocio.Text.Trim(),
@@ -102,6 +110,56 @@ namespace Proyecto_Final.Vistas
             Utilidades.LimpiarControles(this, txtDniNoSocio); // 'txtDni' es el control donde debe quedar el foco
         
 
+        }
+
+        private void txtNombreNoSocio_Leave(object sender, EventArgs e)
+        {
+            if (!Utilidades.ValidarCampoNoVacio(txtNombreNoSocio, "Nombre"))
+                txtNombreNoSocio.Focus();
+        }
+
+        private void txtApellidoNoSocio_Leave(object sender, EventArgs e)
+        {
+            if (!Utilidades.ValidarCampoNoVacio(txtApellidoNoSocio, "Apellido"))
+                txtApellidoNoSocio.Focus();
+        }
+
+        private void dtpFechaNacimientoNoSocio_Leave(object sender, EventArgs e)
+        {
+            if (!Utilidades.ValidarFechaNacimiento(dtpFechaNacimientoNoSocio))
+                dtpFechaNacimientoNoSocio.Focus();
+        }
+
+        private void txtDireccionNoSocio_Leave(object sender, EventArgs e)
+        {
+            if (!Utilidades.ValidarCampoNoVacio(txtDireccionNoSocio, "Direccion"))
+                txtDireccionNoSocio.Focus();
+        }
+
+        private void txtEmailNoSocio_Leave(object sender, EventArgs e)
+        {
+            string email = txtEmailNoSocio.Text.Trim();
+            if (!Utilidades.ValidarEmail(txtEmailNoSocio) || string.IsNullOrWhiteSpace(email))
+                txtEmailNoSocio.Focus();
+
+        }
+
+        private void txtTelefonoNoSocio_Leave(object sender, EventArgs e)
+        {
+            if (!Utilidades.ValidarNumerico(txtTelefonoNoSocio, "Telefono No Socio"))
+                txtTelefonoNoSocio.Focus();
+        }
+
+        private void txtContactoUrgenciaNoSocio_Leave(object sender, EventArgs e)
+        {
+            if (!Utilidades.ValidarCampoNoVacio(txtContactoUrgenciaNoSocio, "Contacto Urgencia"))
+                txtContactoUrgenciaNoSocio.Focus();
+        }
+
+        private void txtFichaMedicaNoSocio_Leave(object sender, EventArgs e)
+        {
+            if (!Utilidades.ValidarNumerico(txtFichaMedicaNoSocio, "Ficha"))
+                txtFichaMedicaNoSocio.Focus();
         }
     }
 
