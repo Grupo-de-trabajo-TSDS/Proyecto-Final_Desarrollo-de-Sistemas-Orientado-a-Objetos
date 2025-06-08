@@ -42,10 +42,10 @@
             this.txtTelefonoNoSocio = new System.Windows.Forms.TextBox();
             this.txtContactoUrgenciaNoSocio = new System.Windows.Forms.TextBox();
             this.txtFichaMedicaNoSocio = new System.Windows.Forms.TextBox();
+            this.dtpFechaNacimientoNoSocio = new System.Windows.Forms.DateTimePicker();
             this.lblTitleNoSocio = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.dtpFechaNacimientoNoSocio = new System.Windows.Forms.DateTimePicker();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -146,6 +146,7 @@
             this.txtNombreNoSocio.Text = "NOMBRE";
             this.txtNombreNoSocio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.txtNombreNoSocio, "Ingrese Nombre");
+            this.txtNombreNoSocio.Leave += new System.EventHandler(this.txtNombreNoSocio_Leave);
             // 
             // txtApellidoNoSocio
             // 
@@ -158,6 +159,7 @@
             this.txtApellidoNoSocio.Text = "APELLIDO";
             this.txtApellidoNoSocio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.txtApellidoNoSocio, "Ingrese Apellido");
+            this.txtApellidoNoSocio.Leave += new System.EventHandler(this.txtApellidoNoSocio_Leave);
             // 
             // txtDireccionNoSocio
             // 
@@ -170,6 +172,7 @@
             this.txtDireccionNoSocio.Text = "DIRECCIÓN";
             this.txtDireccionNoSocio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.txtDireccionNoSocio, "Ingrese Dirección");
+            this.txtDireccionNoSocio.Leave += new System.EventHandler(this.txtDireccionNoSocio_Leave);
             // 
             // txtEmailNoSocio
             // 
@@ -182,6 +185,7 @@
             this.txtEmailNoSocio.Text = "EMAIL";
             this.txtEmailNoSocio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.txtEmailNoSocio, "Ingrese Email");
+            this.txtEmailNoSocio.Leave += new System.EventHandler(this.txtEmailNoSocio_Leave);
             // 
             // txtTelefonoNoSocio
             // 
@@ -194,6 +198,7 @@
             this.txtTelefonoNoSocio.Text = "TELÉFONO";
             this.txtTelefonoNoSocio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.txtTelefonoNoSocio, "Ingrese Teléfono");
+            this.txtTelefonoNoSocio.Leave += new System.EventHandler(this.txtTelefonoNoSocio_Leave);
             // 
             // txtContactoUrgenciaNoSocio
             // 
@@ -206,6 +211,7 @@
             this.txtContactoUrgenciaNoSocio.Text = "CONTACTO URGENCIA";
             this.txtContactoUrgenciaNoSocio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.txtContactoUrgenciaNoSocio, "Ingrese Contacto Urgencia");
+            this.txtContactoUrgenciaNoSocio.Leave += new System.EventHandler(this.txtContactoUrgenciaNoSocio_Leave);
             // 
             // txtFichaMedicaNoSocio
             // 
@@ -218,6 +224,17 @@
             this.txtFichaMedicaNoSocio.Text = "FICHA MÉDICA";
             this.txtFichaMedicaNoSocio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.txtFichaMedicaNoSocio, "Nº registro Ficha Médica");
+            this.txtFichaMedicaNoSocio.Leave += new System.EventHandler(this.txtFichaMedicaNoSocio_Leave);
+            // 
+            // dtpFechaNacimientoNoSocio
+            // 
+            this.dtpFechaNacimientoNoSocio.CustomFormat = "dd/MM/yyyy";
+            this.dtpFechaNacimientoNoSocio.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpFechaNacimientoNoSocio.Location = new System.Drawing.Point(3, 71);
+            this.dtpFechaNacimientoNoSocio.Name = "dtpFechaNacimientoNoSocio";
+            this.dtpFechaNacimientoNoSocio.Size = new System.Drawing.Size(136, 20);
+            this.dtpFechaNacimientoNoSocio.TabIndex = 4;
+            this.dtpFechaNacimientoNoSocio.Leave += new System.EventHandler(this.dtpFechaNacimientoNoSocio_Leave);
             // 
             // lblTitleNoSocio
             // 
@@ -243,15 +260,6 @@
             // toolTip1
             // 
             this.toolTip1.AutomaticDelay = 50;
-            // 
-            // dtpFechaNacimientoNoSocio
-            // 
-            this.dtpFechaNacimientoNoSocio.CustomFormat = "dd/MM/yyyy";
-            this.dtpFechaNacimientoNoSocio.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpFechaNacimientoNoSocio.Location = new System.Drawing.Point(3, 71);
-            this.dtpFechaNacimientoNoSocio.Name = "dtpFechaNacimientoNoSocio";
-            this.dtpFechaNacimientoNoSocio.Size = new System.Drawing.Size(136, 20);
-            this.dtpFechaNacimientoNoSocio.TabIndex = 10;
             // 
             // FrmInscribirNoSocio
             // 
