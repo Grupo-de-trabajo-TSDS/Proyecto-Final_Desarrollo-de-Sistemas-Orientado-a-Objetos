@@ -51,7 +51,6 @@
             this.lblTitulo.Size = new System.Drawing.Size(426, 31);
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "Club Deportivo - Pantalla Principal";
-            this.lblTitulo.Click += new System.EventHandler(this.label1_Click);
             // 
             // lblSocio
             // 
@@ -82,10 +81,10 @@
             this.btnInscribirNoSocio.Margin = new System.Windows.Forms.Padding(2);
             this.btnInscribirNoSocio.Name = "btnInscribirNoSocio";
             this.btnInscribirNoSocio.Size = new System.Drawing.Size(184, 50);
-            this.btnInscribirNoSocio.TabIndex = 2;
+            this.btnInscribirNoSocio.TabIndex = 4;
             this.btnInscribirNoSocio.Text = "INSCRIBIR NO SOCIO";
             this.btnInscribirNoSocio.UseVisualStyleBackColor = true;
-            this.btnInscribirNoSocio.Click += new System.EventHandler(this.button1_Click);
+            this.btnInscribirNoSocio.Click += new System.EventHandler(this.btnInscribirNoSocio_Click);
             // 
             // btnInscribirSocio
             // 
@@ -97,31 +96,31 @@
             this.btnInscribirSocio.TabIndex = 1;
             this.btnInscribirSocio.Text = "INSCRIBIR SOCIO";
             this.btnInscribirSocio.UseVisualStyleBackColor = true;
-            this.btnInscribirSocio.Click += new System.EventHandler(this.button2_Click);
+            this.btnInscribirSocio.Click += new System.EventHandler(this.btnInscribirSocio_Click);
             // 
             // btnEmitirCarnet
             // 
             this.btnEmitirCarnet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEmitirCarnet.Location = new System.Drawing.Point(131, 159);
+            this.btnEmitirCarnet.Location = new System.Drawing.Point(131, 213);
             this.btnEmitirCarnet.Margin = new System.Windows.Forms.Padding(2);
             this.btnEmitirCarnet.Name = "btnEmitirCarnet";
             this.btnEmitirCarnet.Size = new System.Drawing.Size(184, 50);
             this.btnEmitirCarnet.TabIndex = 3;
             this.btnEmitirCarnet.Text = "EMITIR CARNET";
             this.btnEmitirCarnet.UseVisualStyleBackColor = true;
-            this.btnEmitirCarnet.Click += new System.EventHandler(this.button3_Click);
+            this.btnEmitirCarnet.Click += new System.EventHandler(this.btnGenerarCarnet_Click);
             // 
             // btnPagarCuota
             // 
             this.btnPagarCuota.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPagarCuota.Location = new System.Drawing.Point(131, 214);
+            this.btnPagarCuota.Location = new System.Drawing.Point(131, 159);
             this.btnPagarCuota.Margin = new System.Windows.Forms.Padding(2);
             this.btnPagarCuota.Name = "btnPagarCuota";
             this.btnPagarCuota.Size = new System.Drawing.Size(184, 50);
-            this.btnPagarCuota.TabIndex = 5;
+            this.btnPagarCuota.TabIndex = 2;
             this.btnPagarCuota.Text = "PAGAR CUOTA";
             this.btnPagarCuota.UseVisualStyleBackColor = true;
-            this.btnPagarCuota.Click += new System.EventHandler(this.button4_Click);
+            this.btnPagarCuota.Click += new System.EventHandler(this.btnCobrarCuota_Click);
             // 
             // btnRegistrarActividad
             // 
@@ -130,10 +129,10 @@
             this.btnRegistrarActividad.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegistrarActividad.Name = "btnRegistrarActividad";
             this.btnRegistrarActividad.Size = new System.Drawing.Size(184, 50);
-            this.btnRegistrarActividad.TabIndex = 4;
+            this.btnRegistrarActividad.TabIndex = 5;
             this.btnRegistrarActividad.Text = "REGISTRAR ACTIVIDAD";
             this.btnRegistrarActividad.UseVisualStyleBackColor = true;
-            this.btnRegistrarActividad.Click += new System.EventHandler(this.button5_Click);
+            this.btnRegistrarActividad.Click += new System.EventHandler(this.btnAsociarActividad_Click);
             // 
             // btnListarSocios
             // 
@@ -145,7 +144,7 @@
             this.btnListarSocios.TabIndex = 6;
             this.btnListarSocios.Text = "LISTAR SOCIOS";
             this.btnListarSocios.UseVisualStyleBackColor = true;
-            this.btnListarSocios.Click += new System.EventHandler(this.button6_Click);
+            this.btnListarSocios.Click += new System.EventHandler(this.btnListadoMorosos_Click);
             // 
             // btnSalir
             // 
@@ -189,8 +188,6 @@
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Principal";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmPrincipal_FormClosed);
-            this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

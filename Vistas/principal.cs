@@ -10,22 +10,36 @@ namespace Proyecto_Final.Vistas
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void btnInscribirSocio_Click(object sender, EventArgs e)
         {
+
+            // Abrir frmPrincipal
+            FrmInscribirSocio inicio = new FrmInscribirSocio();
+            inicio.Show();
+
+            // Cerrar el formulario actual
+            this.Hide(); // o this.Hide(); si querés solo ocultarlo
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void btnCobrarCuota_Click(object sender, EventArgs e)
         {
-
+            // Abrir frmCobrarCuota
+            frmPagoCuotaSocial inicio = new frmPagoCuotaSocial();
+            inicio.Show();
+            // Cerrar el formulario actual
+            this.Hide(); // o this.Hide(); si querés solo ocultarlo
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void btnGenerarCarnet_Click(object sender, EventArgs e)
         {
-
+            // Abrir frmGenerarCarnet
+            FrmGenerarCarnet inicio = new FrmGenerarCarnet();
+            inicio.Show();
+            // Cerrar el formulario actual
+            this.Hide(); // o this.Hide(); si querés solo ocultarlo
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void btnInscribirNoSocio_Click(object sender, EventArgs e)
         {
             // Abrir frmInscribirNoSocio
             FrmInscribirNoSocio inicio = new FrmInscribirNoSocio();
@@ -33,45 +47,24 @@ namespace Proyecto_Final.Vistas
 
             // Cerrar el formulario actual
             this.Hide(); // o this.Hide(); si querés solo ocultarlo
-
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnAsociarActividad_Click(object sender, EventArgs e)
         {
-            
-            // Abrir frmPrincipal
-            FrmInscribirSocio inicio = new FrmInscribirSocio();
+            // Abrir frmAsociarActividad
+            frmRegistrarActividad inicio = new frmRegistrarActividad();
             inicio.Show();
-
             // Cerrar el formulario actual
             this.Hide(); // o this.Hide(); si querés solo ocultarlo
-        
-
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnListadoMorosos_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void frmPrincipal_Load(object sender, EventArgs e)
-        {
-            
+            // Abrir frmListadoMorosos
+            FrmListadoMorosos inicio = new FrmListadoMorosos();
+            inicio.Show();
+            // Cerrar el formulario actual
+            this.Hide(); // o this.Hide(); si querés solo ocultarlo
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -84,9 +77,6 @@ namespace Proyecto_Final.Vistas
             this.Close(); // o this.Hide(); si querés solo ocultarlo
         }
 
-        private void frmPrincipal_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Application.Exit();
-        }
+        
     }
 }
