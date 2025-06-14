@@ -31,13 +31,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtSocioDni = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtMontoCuotaSocio = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.lblMontoPago = new System.Windows.Forms.Label();
+            this.lblTipoDeSocio = new System.Windows.Forms.Label();
             this.lblFormasPago = new System.Windows.Forms.Label();
             this.cboFormasDePago = new System.Windows.Forms.ComboBox();
+            this.cboTipoSocio = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -67,13 +67,6 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Dni del Socio solicitante:";
             // 
-            // txtMontoCuotaSocio
-            // 
-            this.txtMontoCuotaSocio.Location = new System.Drawing.Point(117, 180);
-            this.txtMontoCuotaSocio.Name = "txtMontoCuotaSocio";
-            this.txtMontoCuotaSocio.Size = new System.Drawing.Size(100, 20);
-            this.txtMontoCuotaSocio.TabIndex = 3;
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(284, 292);
@@ -101,14 +94,14 @@
             this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // lblMontoPago
+            // lblTipoDeSocio
             // 
-            this.lblMontoPago.AutoSize = true;
-            this.lblMontoPago.Location = new System.Drawing.Point(121, 163);
-            this.lblMontoPago.Name = "lblMontoPago";
-            this.lblMontoPago.Size = new System.Drawing.Size(93, 13);
-            this.lblMontoPago.TabIndex = 8;
-            this.lblMontoPago.Text = "Monto de la cuota";
+            this.lblTipoDeSocio.AutoSize = true;
+            this.lblTipoDeSocio.Location = new System.Drawing.Point(102, 163);
+            this.lblTipoDeSocio.Name = "lblTipoDeSocio";
+            this.lblTipoDeSocio.Size = new System.Drawing.Size(71, 13);
+            this.lblTipoDeSocio.TabIndex = 8;
+            this.lblTipoDeSocio.Text = "Tipo de socio";
             // 
             // lblFormasPago
             // 
@@ -132,26 +125,35 @@
             this.cboFormasDePago.Name = "cboFormasDePago";
             this.cboFormasDePago.Size = new System.Drawing.Size(121, 21);
             this.cboFormasDePago.TabIndex = 10;
-            this.cboFormasDePago.SelectedIndexChanged += new System.EventHandler(this.cboFormasDePago_SelectedIndexChanged);
+            // 
+            // cboTipoSocio
+            // 
+            this.cboTipoSocio.FormattingEnabled = true;
+            this.cboTipoSocio.Location = new System.Drawing.Point(83, 179);
+            this.cboTipoSocio.Name = "cboTipoSocio";
+            this.cboTipoSocio.Size = new System.Drawing.Size(121, 21);
+            this.cboTipoSocio.TabIndex = 11;
+            this.cboTipoSocio.SelectedIndexChanged += new System.EventHandler(this.cboFormasDePago_SelectedIndexChanged);
             // 
             // frmPagoCuotaSocial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(644, 327);
+            this.Controls.Add(this.cboTipoSocio);
             this.Controls.Add(this.cboFormasDePago);
             this.Controls.Add(this.lblFormasPago);
-            this.Controls.Add(this.lblMontoPago);
+            this.Controls.Add(this.lblTipoDeSocio);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.txtMontoCuotaSocio);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtSocioDni);
             this.Controls.Add(this.label1);
             this.Location = new System.Drawing.Point(179, 18);
             this.Name = "frmPagoCuotaSocial";
             this.Text = "Pago Cuota Social";
+            this.Load += new System.EventHandler(this.frmPagoCuotaSocial_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -162,12 +164,12 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtSocioDni;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtMontoCuotaSocio;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label lblMontoPago;
+        private System.Windows.Forms.Label lblTipoDeSocio;
         private System.Windows.Forms.Label lblFormasPago;
         private System.Windows.Forms.ComboBox cboFormasDePago;
+        private System.Windows.Forms.ComboBox cboTipoSocio;
     }
 }

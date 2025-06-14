@@ -90,3 +90,9 @@ J:\Users\ospos\Documents\GitHub\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-
 J:\Users\ospos\Documents\GitHub\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Release\Proyecto_Final.Vistas.FrmGenerarCarnet.resources
 J:\Users\ospos\Documents\GitHub\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Release\Proyecto_Final.Vistas.FrmListadoMorosos.resources
 J:\Users\ospos\Documents\GitHub\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Release\Proyecto_Final.Vistas.frmRegistrarActividad.resources
+J:\Users\ospos\Documents\GitHub\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\bin\Release\AForge.dll
+J:\Users\ospos\Documents\GitHub\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\bin\Release\AForge.Video.DirectShow.dll
+J:\Users\ospos\Documents\GitHub\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\bin\Release\AForge.Video.dll
+J:\Users\ospos\Documents\GitHub\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\bin\Release\AForge.xml
+J:\Users\ospos\Documents\GitHub\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\bin\Release\AForge.Video.xml
+J:\Users\ospos\Documents\GitHub\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\bin\Release\AForge.Video.DirectShow.xml

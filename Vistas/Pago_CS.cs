@@ -16,11 +16,38 @@ namespace Proyecto_Final.Vistas
         public frmPagoCuotaSocial()
         {
             InitializeComponent();
+            LlenarTipoSocio();
         }
 
         private void cboFormasDePago_SelectedIndexChanged(object sender, EventArgs e)
         {
             cboFormasDePago.SelectedIndex = 0; // Selects "Item 1"
+        }
+
+        private void txtMontoCuotaSocio_TextChanged(object sender, EventArgs e)
+        {
+
+            
+        }
+
+        private void frmPagoCuotaSocial_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LlenarTipoSocio()
+        {
+            
+            string query = "SELECT categoria, valorcuota FROM cuotasocios";
+            cboTipoSocio.DataSource = Utilidades.CrearTablaDesdeDb(query);
+            cboTipoSocio.DisplayMember = "categoria";
+            cboTipoSocio.ValueMember = "valorcuota";
+        }
+
+        private void cboTipoSocio_TextChanged(object sender, EventArgs e)
+        {
+            var valorSeleccionado = cboTipoSocio.SelectedValue; // valorcuota
+            var categoriaSeleccionada = cboTipoSocio.Text;      // categoria
         }
     }
 }

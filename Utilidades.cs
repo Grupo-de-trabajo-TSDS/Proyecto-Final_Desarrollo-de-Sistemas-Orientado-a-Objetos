@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Data.SqlClient;
+using System.Data;
 using System.Drawing;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace Proyecto_Final
 {
@@ -100,6 +103,28 @@ namespace Proyecto_Final
             }
             picker.CalendarMonthBackground = SystemColors.Window;
             return true;
+        }
+
+        public static DataTable CrearTablaDesdeDb(string query)
+
+        {
+            try
+            {
+                using (var conn = new Conexion())
+                {
+                    MySqlCommand cmd = new MySqlCommand(query, conn.Abrir());
+                    MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+                    return dt;
+                };
+                
+            }
+            catch
+            {
+                MessageBox.Show("Error al abrir la tabla desde la base de datos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return null;
+            }
         }
 
     }

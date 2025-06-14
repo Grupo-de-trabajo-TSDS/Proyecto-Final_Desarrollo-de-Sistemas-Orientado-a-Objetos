@@ -203,3 +203,5 @@ public class NoSocio : Persona
     }
 }
 
+
+
