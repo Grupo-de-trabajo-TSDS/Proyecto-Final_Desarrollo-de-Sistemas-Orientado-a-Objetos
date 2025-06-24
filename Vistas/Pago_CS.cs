@@ -79,8 +79,9 @@ namespace Proyecto_Final.Vistas
                 {
                     MessageBox.Show("Pago de cuota realizado exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Utilidades.Actualizar_status_socios();
-                    new frmInicial().Show();
                     this.Hide();
+                    frmInicial inicial = new frmInicial();
+                    inicial.Show();
                 }
                 else
                 {
@@ -94,9 +95,6 @@ namespace Proyecto_Final.Vistas
                 if (guardado)
                 {
                     MessageBox.Show("Inscripción Socio exitosa.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    new frmInicial().Show();
-                    this.Hide();
-
                 }
                 else
                 {
@@ -108,8 +106,9 @@ namespace Proyecto_Final.Vistas
                 if (pagado)
                 {
                     MessageBox.Show("Pago de Primera cuota realizado exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    new frmInicial().Show();
                     this.Hide();
+                    frmInicial inicial = new frmInicial();
+                    inicial.Show();
                 }
                 else
                 {
@@ -121,8 +120,10 @@ namespace Proyecto_Final.Vistas
 
         private void btnvolver_Click(object sender, EventArgs e)
         {
-            new frmInicial().Show();
             this.Hide();
+            frmInicial inicial = new frmInicial();
+            inicial.Show();
+
         }
 
         private void txtMonto_Leave(object sender, EventArgs e)
@@ -131,11 +132,6 @@ namespace Proyecto_Final.Vistas
             {
                 txtMonto.Focus(); // Volver a enfocar el campo de monto si no es numérico
             }
-        }
-
-        private void frmpagoCuotaSocial_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -88,11 +88,6 @@ namespace Proyecto_Final.Vistas
            
         }
 
-        private void btnSalir_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-        }
-
         private void btnpagaCuota_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -124,11 +119,9 @@ namespace Proyecto_Final.Vistas
 
         private void btnListadoMorosos_Click(object sender, EventArgs e)
         {
-            new Proyecto_Final.Vistas.FrmListadoMorosos().ShowDialog();
-        }
-
-        private void frmInicial_Load(object sender, EventArgs e)
-        {
+            
+            FrmListadoMorosos ListadoMorosos = new FrmListadoMorosos();
+            ListadoMorosos.Show();
 
         }
     }

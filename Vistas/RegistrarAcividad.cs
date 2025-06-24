@@ -8,6 +8,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
 
 namespace Proyecto_Final.Vistas
 {
@@ -19,8 +20,8 @@ namespace Proyecto_Final.Vistas
         private NoSocio existente = null;
         string modoSeleccionado;
         string query;
-        bool pagado = "";
-        bool guardado = "";
+        bool pagado;
+        bool guardado;
 
         public frmregActividad(string dni)
         {
@@ -92,14 +93,15 @@ namespace Proyecto_Final.Vistas
         {
             if (nuevo1 == null)
             {
-                pagado =existente.pagarActividad(idActividad, double.Parse(txtPrecio.Text), modoSeleccionado);
+                pagado =existente.pagarActividad(idActividad, int.Parse(txtPrecio.Text), modoSeleccionado);
 
                 if (pagado)
                 {
                     MessageBox.Show("Pago de Actividad realizado exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Hide();
-                    new frmInicial().Show();
-                    
+                    frmInicial inicial = new frmInicial();
+                    inicial.Show();
+
                 }
                 else
                 {
@@ -113,25 +115,22 @@ namespace Proyecto_Final.Vistas
                 if (guardado)
                 {
                     MessageBox.Show("Inscripción No Socio exitosa.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    this.Hide();
-                    new frmInicial().Show();
-                    
-
                 }
                 else
                 {
                     MessageBox.Show("Error al guardar los datos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
-                pagado = nuevo1.pagarActividad(idActividad, double.Parse(txtPrecio.Text), modoSeleccionado);
+                pagado = nuevo1.pagarActividad(idActividad, int.Parse(txtPrecio.Text), modoSeleccionado);
 
                 if (pagado)
                 {
 
                     MessageBox.Show("Pago de Primera Actividad realizado exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Hide();
-                    new frmInicial().Show();
-                    
+                    frmInicial inicial = new frmInicial();
+                    inicial.Show();
+
                 }
                 else
                 {
@@ -145,11 +144,6 @@ namespace Proyecto_Final.Vistas
         {
             this.Hide();
             new frmInicial().Show();
-        }
-
-        private void frmregActividad_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

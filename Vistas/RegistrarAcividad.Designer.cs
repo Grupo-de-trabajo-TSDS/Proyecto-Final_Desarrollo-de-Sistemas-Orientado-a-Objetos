@@ -190,7 +190,6 @@
             this.Name = "frmregActividad";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Regristrar en Actividad";
-            this.Load += new System.EventHandler(this.frmregActividad_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

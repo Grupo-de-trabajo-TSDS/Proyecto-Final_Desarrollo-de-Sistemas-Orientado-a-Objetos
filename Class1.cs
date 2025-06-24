@@ -177,7 +177,7 @@ public class NoSocio : Persona
             {
                 var con = conn.Abrir();
                 string query = @"INSERT INTO pagoactividad (idactividad, idnsocio, fechapago, precioactividad, metodopago)
-                             VALUES (@idactividad, @dni, @valor, @fecha, @modo)";
+                             VALUES (@idactividad, @dni, @fecha, @valor, @modo)";
                 using (var cmd = new MySqlCommand(query, con))
                 {
                     cmd.Parameters.AddWithValue("@idactividad", idactividad.ToString());

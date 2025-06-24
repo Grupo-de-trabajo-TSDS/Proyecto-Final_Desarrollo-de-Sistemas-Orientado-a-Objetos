@@ -26,10 +26,11 @@ namespace Proyecto_Final.Vistas
             // Ejemplo de validación simple 
             if (usuario == "admin" && contrasena == "1234")
             {
+                this.Hide();
                 frmInicial inicial = new frmInicial();
                 Utilidades.Actualizar_status_socios();
                 inicial.Show();
-                this.Hide(); // Oculta el formulario de login
+                 
             }
             else
             {
@@ -41,12 +42,5 @@ namespace Proyecto_Final.Vistas
         {
             Application.Exit();
         }
-
-        private void frmLogin_Load(object sender, EventArgs e)
-        {
-
-        }
-
-       
     }
 }
