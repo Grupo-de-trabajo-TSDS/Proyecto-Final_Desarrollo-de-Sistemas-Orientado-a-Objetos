@@ -26,7 +26,7 @@ namespace Proyecto_Final.Vistas
 
         private void txtDniInicial_Leaving(object sender, EventArgs e)
         {  
-            string dni = txtDniInicial.Text.Trim();
+            _Dni = txtDniInicial.Text.Trim();
 
             if (!Utilidades.ValidarNumerico(txtDniInicial, "DNI"))
             {
@@ -34,10 +34,9 @@ namespace Proyecto_Final.Vistas
             }
             else
             {
-                var resultado = Utilidades.ExisteClientePorDNI(dni);
+                var resultado = Utilidades.ExisteClientePorDNI(_Dni);
                 if (resultado.nombre != null)
                 {
-                    _Dni = dni; 
                     MessageBox.Show("Este DNI ya está registrado.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     dataGridView.Rows.Clear();
                     dataGridView.Rows.Add(resultado.nombre, resultado.apellido, resultado.tipoCliente, resultado.deudor);
@@ -46,14 +45,14 @@ namespace Proyecto_Final.Vistas
                     if (resultado.tipoCliente == "Socio")
                     {
                         tipo = "Socio";
-                        Socio objsocio = Utilidades.ObtenerSocioPorDni(dni);
+                        Socio objsocio = Utilidades.ObtenerSocioPorDni(_Dni);
                         pnlSocio.Visible = true;
                         pnlnoSocio.Visible = false;
                     }
                     else 
                     {
                         tipo = "No Socio";
-                        NoSocio objnoSocio = Utilidades.ObtenerNoSocioPorDni(dni);
+                        NoSocio objnoSocio = Utilidades.ObtenerNoSocioPorDni(_Dni);
                         pnlnoSocio.Visible = true;
                         pnlSocio.Visible = false;
                     }

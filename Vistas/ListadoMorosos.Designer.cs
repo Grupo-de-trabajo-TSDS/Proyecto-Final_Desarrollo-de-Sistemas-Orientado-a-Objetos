@@ -27,10 +27,10 @@
             this.dgvMorosos.AllowUserToAddRows = false;
             this.dgvMorosos.AllowUserToDeleteRows = false;
             this.dgvMorosos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMorosos.Location = new System.Drawing.Point(12, 12);
+            this.dgvMorosos.Location = new System.Drawing.Point(41, 12);
             this.dgvMorosos.Name = "dgvMorosos";
             this.dgvMorosos.ReadOnly = true;
-            this.dgvMorosos.Size = new System.Drawing.Size(760, 400);
+            this.dgvMorosos.Size = new System.Drawing.Size(863, 400);
             this.dgvMorosos.TabIndex = 0;
             // 
             // btnCerrar
@@ -47,14 +47,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 461);
+            this.ClientSize = new System.Drawing.Size(945, 461);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.dgvMorosos);
             this.Name = "FrmListadoMorosos";
-            this.Text = "Listado de Socios Morosos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Listado de Socios Morosos";
+            this.Load += new System.EventHandler(this.FrmListadoMorosos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMorosos)).EndInit();
             this.ResumeLayout(false);
+
         }
     }
 }

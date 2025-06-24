@@ -36,7 +36,7 @@ namespace Proyecto_Final
             conn.Dispose();
         }
 
-        public void ProbarConexion() //Método desarrollado sólo para probar la conectividad con la BD
+       /* public void ProbarConexion() //Método desarrollado sólo para probar la conectividad con la BD
         {                            //No tiene aplicación en el sistema
 
             using (Conexion conn = new Conexion())
@@ -54,7 +54,7 @@ namespace Proyecto_Final
                 }
 
             }
-        }
+        }*/
 
     }
 }

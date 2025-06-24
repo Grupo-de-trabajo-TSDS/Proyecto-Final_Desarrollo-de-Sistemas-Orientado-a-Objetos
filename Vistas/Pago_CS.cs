@@ -69,9 +69,11 @@ namespace Proyecto_Final.Vistas
 
         private void ProcesarPagoCuota()
         {
+            bool pagado;
+            bool guardado;
             if (nuevo1 == null)
             {
-                bool pagado = existente.pagarCuota(double.Parse(txtMonto.Text), modoSeleccionado);
+                pagado = existente.pagarCuota(double.Parse(txtMonto.Text), modoSeleccionado);
 
                 if (pagado)
                 {
@@ -87,7 +89,7 @@ namespace Proyecto_Final.Vistas
             }
             else
             {
-                bool guardado = nuevo1.inscripcionSocio(nuevo1);
+                guardado = nuevo1.inscripcionSocio(nuevo1);
 
                 if (guardado)
                 {
@@ -101,7 +103,7 @@ namespace Proyecto_Final.Vistas
                     MessageBox.Show("Error al guardar los datos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
-                bool pagado = nuevo1.pagarCuota(double.Parse(txtMonto.Text), modoSeleccionado);
+                pagado = nuevo1.pagarCuota(double.Parse(txtMonto.Text), modoSeleccionado);
 
                 if (pagado)
                 {
