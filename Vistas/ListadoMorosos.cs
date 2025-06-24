@@ -22,5 +22,10 @@ namespace Proyecto_Final.Vistas
         {
             this.Close();
         }
+
+        private void FrmListadoMorosos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

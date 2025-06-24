@@ -68,10 +68,7 @@ J:\Users\ospos\Documents\GitHub\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-
 J:\Users\ospos\Documents\GitHub\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\bin\Debug\System.Threading.Tasks.Extensions.xml
 J:\Users\ospos\Documents\GitHub\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.csproj.AssemblyReference.cache
 J:\Users\ospos\Documents\GitHub\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.Properties.Resources.resources
-J:\Users\ospos\Documents\GitHub\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.Vistas.FrmInscribirNoSocio.resources
-J:\Users\ospos\Documents\GitHub\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.Vistas.FrmInscribirSocio.resources
 J:\Users\ospos\Documents\GitHub\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.Vistas.frmLogin.resources
-J:\Users\ospos\Documents\GitHub\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.Vistas.frmPrincipal.resources
 J:\Users\ospos\Documents\GitHub\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.csproj.GenerateResource.cache
 J:\Users\ospos\Documents\GitHub\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.csproj.CoreCompileInputs.cache
 J:\Users\ospos\Documents\GitHub\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto.337BEB42.Up2Date
@@ -127,7 +124,6 @@ J:\Users\ospos\Documents\GitHub\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-
 J:\Users\ospos\Documents\GitHub\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\bin\Debug\System.ValueTuple.xml
 J:\Users\ospos\Documents\GitHub\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.Vistas.FrmGenerarCarnet.resources
 J:\Users\ospos\Documents\GitHub\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.Vistas.FrmListadoMorosos.resources
-J:\Users\ospos\Documents\GitHub\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.Vistas.frmRegistrarActividad.resources
 J:\Users\ospos\Documents\GitHub\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.Vistas.frmPagoCuotaSocial.resources
 J:\Users\ospos\Documents\GitHub\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\bin\Debug\Proyecto_Final.exe.config
 J:\Users\ospos\Documents\GitHub\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\bin\Debug\Proyecto_Final.exe
@@ -226,3 +222,6 @@ J:\Users\ospos\Documents\GitHub\Proyecto-Final_desarrollo-de-sistemas-orientado-
 J:\Users\ospos\Documents\GitHub\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\obj\Debug\Proyecto.337BEB42.Up2Date
 J:\Users\ospos\Documents\GitHub\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\obj\Debug\Proyecto_Final.exe
 J:\Users\ospos\Documents\GitHub\Proyecto-Final_desarrollo-de-sistemas-orientado-a-objetos3\obj\Debug\Proyecto_Final.pdb
+J:\Users\ospos\Documents\GitHub\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.Vistas.frmInicial.resources
+J:\Users\ospos\Documents\GitHub\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.Vistas.frmregActividad.resources
+J:\Users\ospos\Documents\GitHub\Proyecto-Final_Desarrollo-de-Sistemas-Orientado-a-Objetos\obj\Debug\Proyecto_Final.Vistas.frminscribirCliente.resources

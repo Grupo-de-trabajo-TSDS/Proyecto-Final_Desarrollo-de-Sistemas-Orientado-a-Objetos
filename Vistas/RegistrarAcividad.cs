@@ -18,6 +18,9 @@ namespace Proyecto_Final.Vistas
         private NoSocio nuevo1 = null;
         private NoSocio existente = null;
         string modoSeleccionado;
+        string query;
+        bool pagado = "";
+        bool guardado = "";
 
         public frmregActividad(string dni)
         {
@@ -62,9 +65,9 @@ namespace Proyecto_Final.Vistas
             modoSeleccionado = cboFormasDePago.Text;
         }
 
-        public static DataTable ObtenerActividades()
+        public DataTable ObtenerActividades()
         {
-            string query = "SELECT idactividad, descripact, precioact, fechaactividad FROM Actividades";
+            query = "SELECT idactividad, descripact, precioact, fechaactividad FROM Actividades";
             return Utilidades.CrearTablaDesdeDb(query);
         }
 
@@ -89,7 +92,7 @@ namespace Proyecto_Final.Vistas
         {
             if (nuevo1 == null)
             {
-                bool pagado = existente.pagarActividad(idActividad, double.Parse(txtPrecio.Text), modoSeleccionado);
+                pagado =existente.pagarActividad(idActividad, double.Parse(txtPrecio.Text), modoSeleccionado);
 
                 if (pagado)
                 {
@@ -105,7 +108,7 @@ namespace Proyecto_Final.Vistas
             }
             else
             {
-                bool guardado = nuevo1.inscripcionNoSocio(nuevo1);
+                guardado = nuevo1.inscripcionNoSocio(nuevo1);
 
                 if (guardado)
                 {
@@ -120,7 +123,7 @@ namespace Proyecto_Final.Vistas
                     MessageBox.Show("Error al guardar los datos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
-                bool pagado = nuevo1.pagarActividad(idActividad, double.Parse(txtPrecio.Text), modoSeleccionado);
+                pagado = nuevo1.pagarActividad(idActividad, double.Parse(txtPrecio.Text), modoSeleccionado);
 
                 if (pagado)
                 {
@@ -144,6 +147,9 @@ namespace Proyecto_Final.Vistas
             new frmInicial().Show();
         }
 
+        private void frmregActividad_Load(object sender, EventArgs e)
+        {
 
+        }
     }
 }

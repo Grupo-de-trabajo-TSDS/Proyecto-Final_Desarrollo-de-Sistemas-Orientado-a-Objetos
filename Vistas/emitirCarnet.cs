@@ -107,6 +107,11 @@ namespace Proyecto_Final.Vistas
             inicio.Show();
             this.Hide();
         }
+
+        private void FrmGenerarCarnet_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }
